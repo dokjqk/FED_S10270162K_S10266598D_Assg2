@@ -23,7 +23,7 @@ To set up this project locally, follow the instructions below.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/mokesell.git
+   git clone https://github.com/dokjqk/FED_S10270162K_S10266598D_Assg2.git
    cd mokesell
 
 ## License
