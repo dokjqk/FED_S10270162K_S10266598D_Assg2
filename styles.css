@@ -1,0 +1,13 @@
+body {
+    background-color: #E6E8E6;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
