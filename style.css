@@ -6,49 +6,55 @@ body {
     box-sizing: border-box;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #E6E8E6;
-    border-bottom: 1px solid #ddd;
-}
-header h1{
-    font-size: 20px;
-    margin: 0;
-}
 
-header nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-}
 /* Navigation CSS - start - */
 nav {
-    justify-content: flex-start;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    align-self: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
 }
 
 nav :first-child {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 .search-bar {
-    flex-grow: 4;
-    text-align: center;
+  flex-grow: 3;
+  text-align: center;
+  
 }
+
 .search-bar input {
-    width: 60vw;
+  width: 60vw;
+  height: 2.5vw;
+  background-color: #A8A9AD;
+  border: none;
+}
+.search-bar :placeholder-shown {
+  font-size: 1.2vw;
+  padding-left: 20px;
+}
+
+nav button {
+  flex-grow: 2;
+  height: 2.5vw;
+  width: 2.5vw;
+  cursor: pointer;
+  font-size: 1vw;
+
 }
 
 nav a {
-    flex-grow: 1;
+  flex-grow: 1;
+  font-size: 1vw;
 }
+a{
+  color: #1b1b1b;
+  text-decoration: none;;
+}
+
 
 /* Navigation CSS - end - */
 
