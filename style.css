@@ -1,9 +1,9 @@
 body {
-    background-color: #E6E8E6;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-family: Lato, serif;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
 }
 
 
@@ -23,14 +23,15 @@ nav :first-child {
 .search-bar {
   flex-grow: 3;
   text-align: center;
-  
+
 }
 
 .search-bar input {
   width: 60vw;
   height: 2.5vw;
-  background-color: #A8A9AD;
+  background-color: #ffae00;
   border: none;
+  border-radius: 25px;
 }
 .search-bar :placeholder-shown {
   font-size: 1.2vw;
@@ -41,9 +42,10 @@ nav button {
   flex-grow: 2;
   height: 2.5vw;
   width: 2.5vw;
-  cursor: pointer;
   font-size: 1vw;
-
+  background-color: #ffae00;
+  border: none;
+  border-radius: 25px;
 }
 
 nav a {
@@ -62,39 +64,78 @@ a{
 .banner {
     margin: 20px auto;
     width: 90%;
-    height:200px;
+    height:300px;
     background-color: #E6E8E6;
     border-radius: 10px;
 }
-
-.categories, .listings {
-    margin: 20px auto;
-    width: 90%;
-}
-.categories h2, .listings h2{
-    margin-bottom: 10px;
-}
-.categories  .grid, .listings .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
-    gap:10px;
+.banner img {
+    height: 300px;
+    width: 100%;
 }
 
-.categories .grid div, .listings .grid div {
-    height: 100px;
-    background-color: #ddd;
-    border-radius: 5px;
+.categories {
+    padding-left: 5vw;
+}
+.listings {
+    padding-left: 5vw;
+}
+.grid{
+  display: flex;
+  gap: 50px;
+  justify-content: left;
+}
+
+.listing {
+  height: 450px;
+  width: 300px;
+  background-color: #E6E8E6;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.listing img {
+  height: 300px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.listing-icon {
+  padding-top: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.listing h5{
+  font-size: 0.8vw;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.listing-icon img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  padding-left: 10px;
+}
+.category {
+  height:300px;
+  width: 300px;
+  background-color: #e6e8e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.category img 
+{
+  height: 200px;
+  align-content: center;
 }
 
 /*login.html*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f8f8f8;
-  }
-  
+
   header {
     display: flex;
     justify-content: space-between;
