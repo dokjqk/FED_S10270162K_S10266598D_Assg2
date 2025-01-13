@@ -2,12 +2,33 @@ body {
     background-color: #E6E8E6;
     padding-left: 10%;
     padding-right: 10%;
+    font-family: Lato, serif;
 }
 
+/* Navigation CSS - start - */
 nav {
-    flex: auto;
+    justify-content: flex-start;
+    flex-grow: 1;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    align-content: center;
+    align-self: center;
+
 }
+
+nav :first-child {
+    flex-grow: 1;
+}
+.search-bar {
+    flex-grow: 4;
+    text-align: center;
+}
+.search-bar input {
+    width: 60vw;
+}
+
+nav a {
+    flex-grow: 1;
+}
+
+/* Navigation CSS - end - */
