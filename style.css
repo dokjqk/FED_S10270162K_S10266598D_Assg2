@@ -168,3 +168,83 @@ body {
     color: blue;
   }
   
+  /*register.html*/
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+    background-color: #ebe6df;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .image-section img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .form-section {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid blue;
+    width: 350px;
+  }
+  
+  .form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-section label {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .form-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .dob-container {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .dob-container input {
+    width: calc(33.33% - 4px);
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .signup-button:hover {
+    background-color: darkorange;
+  }
+  
+  .form-section p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .form-section a {
+    text-decoration: none;
+    color: blue;
+  }
+  
