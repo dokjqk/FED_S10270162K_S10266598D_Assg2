@@ -1,0 +1,170 @@
+body {
+    background-color: #E6E8E6;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: Lato, serif;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #E6E8E6;
+    border-bottom: 1px solid #ddd;
+}
+header h1{
+    font-size: 20px;
+    margin: 0;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+/* Navigation CSS - start - */
+nav {
+    justify-content: flex-start;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+}
+
+nav :first-child {
+    flex-grow: 1;
+}
+.search-bar {
+    flex-grow: 4;
+    text-align: center;
+}
+.search-bar input {
+    width: 60vw;
+}
+
+nav a {
+    flex-grow: 1;
+}
+
+/* Navigation CSS - end - */
+
+
+.banner {
+    margin: 20px auto;
+    width: 90%;
+    height:200px;
+    background-color: #E6E8E6;
+    border-radius: 10px;
+}
+
+.categories, .listings {
+    margin: 20px auto;
+    width: 90%;
+}
+.categories h2, .listings h2{
+    margin-bottom: 10px;
+}
+.categories  .grid, .listings .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+    gap:10px;
+}
+
+.categories .grid div, .listings .grid div {
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/*login.html*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+    background-color: #ebe6df;
+  }
+  
+  .login-box {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: darkorange;
+  }
+  
+  .forgot-password {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .signup-container p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .signup-container a {
+    text-decoration: none;
+    color: blue;
+  }
+  
