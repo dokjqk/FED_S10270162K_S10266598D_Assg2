@@ -5,45 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MokeSell Sign Up</title>
   <link rel="stylesheet" href="../style.css">
+
 </head>
 <body>
+  <header>
+    <h1>MokeSell Sign Up</h1>
     <nav>
-      <a href="../index.html"><h1>MokeSell Sign Up</h1></a>
       <a href="#">Need Help?</a>
     </nav>
-
+  </header>
 
   <main class="signup-container">
     <div class="image-section">
-      <img src="../images/monkey.jpg" alt="Join Monkeys Now" />
+      <img src="../images/monkey.jpg" alt="Join Monkeys Now">
     </div>
 
     <div class="form-section">
       <h2>Sign Up</h2>
-      <form action="#" method="post">
+      <form id="signupForm">
         <label for="username">Username</label>
-        <input type="text" id="username" placeholder="Username" required>
+        <input type="text" id="username" name="username" placeholder="Username" required>
 
         <label for="dob">Date of Birth</label>
-        <div class="dob-container">
-          <input type="number" id="day" placeholder="DD" min="1" max="31" required>
-          <input type="number" id="month" placeholder="MM" min="1" max="12" required>
-          <input type="number" id="year" placeholder="YYYY" min="1900" max="2025" required>
-        </div>
+        <input type="date" id="dob" name="dob" required>
 
         <label for="gender">Gender</label>
-        <input type="text" id="gender" placeholder="Gender" required>
+        <input type="text" id="gender" name="gender" placeholder="Gender" required>
 
         <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
 
         <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
 
         <button type="submit" class="signup-button">Sign Up</button>
       </form>
-      <p>Already have an account? <a href="login.html">Log In</a></p>
+      <p>Already have an account? <a href=" login.html">Log In</a></p>
     </div>
   </main>
+
+  <script src="register.js"></script>
 </body>
 </html>
