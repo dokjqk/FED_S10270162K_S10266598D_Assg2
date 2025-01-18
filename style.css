@@ -23,19 +23,21 @@ nav :first-child {
 .search-bar {
   flex-grow: 3;
   text-align: center;
-
+  color: white;
 }
 
 .search-bar input {
   width: 60vw;
   height: 2.5vw;
-  background-color: #ffae00;
+  background-color: #1d2e4a;
   border: none;
   border-radius: 25px;
+  color: white;
 }
 .search-bar :placeholder-shown {
   font-size: 1.2vw;
   padding-left: 20px;
+  color: white;
 }
 
 nav button {
@@ -43,9 +45,10 @@ nav button {
   height: 2.5vw;
   width: 2.5vw;
   font-size: 1vw;
-  background-color: #ffae00;
+  background-color: #1d2e4a;
   border: none;
   border-radius: 25px;
+  color: white;
 }
 
 nav a {
@@ -87,8 +90,8 @@ a{
 
 .listing {
   height: 450px;
-  width: 300px;
-  background-color: #E6E8E6;
+  width: 15vw;
+  background-color: #bdc4d4;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -120,8 +123,8 @@ a{
 }
 .category {
   height:300px;
-  width: 300px;
-  background-color: #e6e8e6;
+  width: 15vw;
+  background-color: #52667e;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,6 +136,26 @@ a{
   height: 200px;
   align-content: center;
 }
+
+.main-listing-image{
+  background-color: #52667e;
+  height: 500px;
+  width: 400px;
+}
+
+.side-image {
+  height: 100px;
+  width: 100px;
+  background-color: #52667e;
+}
+.side-listing-image{
+  display: flex;
+  gap: 20px;
+}
+.listing-left {
+  display: flex;
+}
+
 
 /*login.html*/
 
