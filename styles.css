@@ -3,9 +3,7 @@ body {
     box-sizing: border-box;
     background-color: #f8f8f8;
     margin: 0;
-    padding-left: 3vw;
-    padding-right: 3vw;
-
+    padding: 0;
     color: #1b1b1b;
   }
   
@@ -306,10 +304,8 @@ button:hover {
 
 /* Chatbox */
 .chatbox {
-  
   margin: 0;
   padding: 0;
-  padding-right: 20px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
@@ -560,103 +556,4 @@ body.show-chatbot .chatbot-popup {
 .chat-form .chat-controls button:hover {
   background: #294678;
   color: #fffbf4;
-}
-
-
-.list-items {
-  padding-top: 10px;
-  background-color: #eaeaea;
-  height: 700px;
-  width: 80vw;
-  margin: 0 auto;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added drop shadow */
-
-}
-
-.list-left-side{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-.list-right-side {
-  display: flex;
-  flex-direction: column;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  gap: 10px;
-  width: 30vw;
-  height: 350px;
-}
-
-
-.form-items-left{
-  height: 50px;
-  width: 600px;
-  background-color: #d6d8df ;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-}
-
-.create-list-image {
-  height: 200px;
-  width: 200px;
-  background-color: #d6d8df;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 10px;
-
-}
-
-.create-list-image-big {
-  height: 400px;
-  width: 400px;
-  background-color: #d6d8df;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 10px;
-
-}
-
-.create-list-images{
-  display: flex;
-  gap: 20px;
-  
-  
-}
-
-.create-list-image img {
-  max-height: 200px;
-  border-radius: 10px;
-  width: auto; /* Ensure the image maintains its aspect ratio */
-}
-
-
-.list-right-side input,
-.list-right-side select,
-.list-right-side textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-@media screen and (max-width: 1080px) {
-  .chatbox{
-    display: none;
-  }
-  
 }
