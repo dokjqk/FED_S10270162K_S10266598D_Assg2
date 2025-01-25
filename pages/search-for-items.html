@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MokeSell</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
 <body>
     <header>
-        <a href=""><h2>MokeSell</h2></a>
-        <form action="./pages/search-for-items.html">
+        <a href="../index.html"><h2>MokeSell</h2></a>
+        <form action="./search-for-items.html">
             <div class="search">
                 <span class="search-icon material-symbols-outlined">search</span>
                 <input class="search-input" type="text" name="query" placeholder="Search for books">
@@ -29,54 +30,11 @@
         </nav>
         <a href="./pages/list-items.html"><button>Sell</button></a>
     </header>
-
-
     <div class="banner">
-        <img src="./images/Book-Banner.jpg" alt="">
+        <img src="../images/Book-Banner.jpg" alt="">
     </div>
-
-    <section class="categories">
-        <div class="cat-header">
-            <h2>Browse by Category</h2>
-            <div>
-                <button id="scroll-left-button"><</button>
-                <button id="scroll-button">></button>
-            </div>
-        </div>
-        <div class="cat-grid" id="cat-grid">
-            <div class="category">
-                <img src="./images/atomic-habits.jpg" alt="atomic-habits">
-                <h3>Non-fiction</h3>
-            </div>
-            <div class="category">
-                <img src="./images/harry-potter.jpg" alt="harry-potter">
-                <h3>Fiction</h3>
-            </div>
-            <div class="category">
-                <img src="./images/dandadan.jpg" alt="dandadan">
-                <h3>Manga</h3>
-            </div>
-            <div class="category">
-                <img src="./images/batman.jpg" alt="batman">
-                <h3>Comics</h3>
-            </div>
-            <div class="category">
-                <img src="./images/lord-of-the-ring.jpg" alt="lord-of-the-ring">
-                <h3>Fantasy</h3>
-            </div>
-            <div class="category">
-                <img src="./images/murder-on-the-orient-express.jpg" alt="murder-on-the-orient-express">
-                <h3>Mystery</h3>
-            </div>
-            <div class="category">
-                <img src="./images/twilight.jpg" alt="twilight">
-                <h3>Young Adult</h3>
-            </div>
-        </div>
-    </section>
-    
     <section class="listings">
-        <h2>Explore Listings</h2>
+        <h2>301 results for '<span id="query"></span>' in Singapore</h2>
         <div class="grid">
             <a href="./pages/listing-page.html">
                 <div class="listing">
@@ -137,7 +95,6 @@
     </section>
     <br>
     <section class="listings">
-        <h2>Explore Listings</h2>
         <div class="grid">
             <a href="./pages/listing-page.html">
                 <div class="listing">
@@ -196,44 +153,6 @@
             </a>
         </div>   
     </section>
-    
-    <section class="chatbox">
-        <button id="chatbox-toggler">
-            <span class="material-symbols-outlined">mode_comment</span>
-            <span class="material-symbols-outlined">close</span>
-         </button>
-    
-        <div class="chatbot-popup">
-            <div class="chat-header">
-                <div class="header-info">
-                    <svg class="chatbox-logo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024"><path d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"></path>
-                    </svg>
-                    <h2 class="logo-text">Chatbox</h2>
-                </div>
-                <button id="close-chatbot" class="material-symbols-outlined">keyboard_arrow_down</button>
-            </div>
-    
-            <div class="chat-body">
-                <div class="message bot-message">
-                    <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024"><path d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"></path></svg>
-                    <div class="message-text">Hey there! 👋 <br>How can I help you today?</div>
-                </div>
-            </div>
-    
-            <div class="chat-footer">
-                <form action="#" class="chat-form">
-                    <textarea placeholder="Enter your message." class="message-input" required></textarea>
-                    <div class="chat-controls">
-                        <button type="submit" id="send-message" class="material-symbols-outlined">send</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <script src="./script.js"></script>
+    <script src="./search-for-items.js"></script>
 </body>
 </html>

@@ -5,33 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DanDaDan</title>
     <link rel="stylesheet" href="../styles.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+
 </head>
 <body>
-    <nav>
-        <a href="../index.html"><h1>MokeSell</h1></a>
-        <div class="search-bar">
-             <input type="text" placeholder="Search for items">
-         </div>
-         <button>Search</button>
-         <a href="./login.html">Login</a>
-         <a href="./register.html">Register</a>
-     </nav> 
-     <div class="listing-page">
-        <div class="left-listing">
-            <div class="main-listing-image"></div>
-            <div class="side-listing-image">
-                <div class="side-image"></div>
-                <div class="side-image"></div>
-                <div class="side-image"></div>
+    <header>
+        <a href="../index.html"><h2>MokeSell</h2></a>
+        <form action="">
+            <div class="search">
+                <span class="search-icon material-symbols-outlined">search</span>
+                <input class="search-input" type="text" placeholder="Search for books">
             </div>
-         </div>
-         <div class="right-listing">
-            <h2>DanDaDan Volume 1</h2>
-            <p>Price: $10</p>
-            <p>Condition: New</p>
-            <p>Author: Yukinobu Tatsu</p>
-            <p>ISBN: 9780582060104</p>
-         </div>    
-     </div>
+        </form>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Listings</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+        <a href="sell-button"><button>Sell</button></a>
+    </header>
+    <div class="listing-page">
+        <div class="listing-page-left">
+            <div class="listing-image" id="main-listing-image">
+                <img src="../images/dandadan.jpg" alt="main-image">
+            </div>
+            <div class="small-listing-image">
+                <div class="listing-image-small" onclick="updateMainImage(this)">
+                    <img src="../images/dandadan.jpg" alt="image-one">
+                </div>
+                <div class="listing-image-small" onclick="updateMainImage(this)">
+                    <img src="../images/dandadan-back.jpg" alt="image-two">
+                </div>
+                <div class="listing-image-small" onclick="updateMainImage(this)">
+                    <img src="../images/dandadan-used.jpg" alt="image-three">
+                </div>
+            </div>
+        </div>
+        <div class="listing-page-right">
+            <h4>Manga</h4>
+            <h2>DanDaDan</h2>
+            <h3>SGD 5</h3>
+            <div class="profile">
+                <img src="../images/icon.jpg" alt="Icon">
+                <h4>dokjqk</h4>
+            </div>
+            <div class="details">
+                <h4>Condition: Used</h4>
+                <p>Meetup: Yew Tee MRT</p>
+                <button>Message</button>
+            </div>
+        </div>
+    </div>
+    <section class="listings">
+        <h2>Explore Other Listings</h2>
+        <div class="grid">
+            <a href="../pages/listing-page.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="../images/icon.jpg" alt="Icon">
+                        <h4>dokjqk</h4>
+                    </div>
+                    <img src="../images/dandadan.jpg" alt="DanDaDan">
+                    <h5>S$5</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+            <a href="../pages/listing-page.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="../images/icon.jpg" alt="Icon">
+                        <h4>dokjqk</h4>
+                    </div>
+                    <img src="../images/dandadan.jpg" alt="DanDaDan">
+                    <h5>S$5</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+            <a href="../pages/listing-page.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="../images/icon.jpg" alt="Icon">
+                        <h4>dokjqk</h4>
+                    </div>
+                    <img src="../images/dandadan.jpg" alt="DanDaDan">
+                    <h5>S$5</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+            <a href="../pages/listing-page.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="../images/icon.jpg" alt="Icon">
+                        <h4>dokjqk</h4>
+                    </div>
+                    <img src="../images/dandadan.jpg" alt="DanDaDan">
+                    <h5>S$5</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+            <a href="../pages/listing-page.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="../images/icon.jpg" alt="Icon">
+                        <h4>dokjqk</h4>
+                    </div>
+                    <img src="../images/dandadan.jpg" alt="DanDaDan">
+                    <h5>S$5</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+        </div>   
+    </section>
+    <script src="./listing-page-script.js"></script>
 </body>
 </html>
