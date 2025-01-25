@@ -1,9 +1,9 @@
 body {
-    background-color: #E6E8E6;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-family: Lato, serif;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
 }
 
 
@@ -23,27 +23,32 @@ nav :first-child {
 .search-bar {
   flex-grow: 3;
   text-align: center;
-  
+  color: white;
 }
 
 .search-bar input {
   width: 60vw;
   height: 2.5vw;
-  background-color: #A8A9AD;
+  background-color: #1d2e4a;
   border: none;
+  border-radius: 25px;
+  color: white;
 }
 .search-bar :placeholder-shown {
   font-size: 1.2vw;
   padding-left: 20px;
+  color: white;
 }
 
 nav button {
   flex-grow: 2;
   height: 2.5vw;
   width: 2.5vw;
-  cursor: pointer;
   font-size: 1vw;
-
+  background-color: #1d2e4a;
+  border: none;
+  border-radius: 25px;
+  color: white;
 }
 
 nav a {
@@ -62,30 +67,35 @@ a{
 .banner {
     margin: 20px auto;
     width: 90%;
-    height:200px;
+    height:300px;
     background-color: #E6E8E6;
     border-radius: 10px;
 }
-
-.categories, .listings {
-    margin: 20px auto;
-    width: 90%;
-}
-.categories h2, .listings h2{
-    margin-bottom: 10px;
-}
-.categories  .grid, .listings .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
-    gap:10px;
+.banner img {
+    height: 300px;
+    width: 100%;
 }
 
-.categories .grid div, .listings .grid div {
-    height: 100px;
-    background-color: #ddd;
-    border-radius: 5px;
+.categories {
+    padding-left: 5vw;
+}
+.listings {
+    padding-left: 5vw;
+}
+.grid{
+  display: flex;
+  gap: 50px;
+  justify-content: left;
 }
 
+.listing {
+  height: 450px;
+  width: 15vw;
+  background-color: #bdc4d4;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
   
   /*register.html*/
 /* General Styles */
