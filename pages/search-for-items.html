@@ -14,8 +14,8 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><h2>MokeSell</h2></a>
-        <form action="./search-for-items.html">
+        <a href=""><h2>MokeSell</h2></a>
+        <form action="./pages/search-for-items.html">
             <div class="search">
                 <span class="search-icon material-symbols-outlined">search</span>
                 <input class="search-input" type="text" name="query" placeholder="Search for books">
@@ -24,8 +24,9 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Listings</a></li>
-                <li><a href="./pages/login.html">Login</a></li>
-                <li><a href="./pages/register.html">Register</a></li>
+                <li id="login-link" style="display: none;"><a href="./pages/login.html">Login</a></li>
+                <li id="register-link" style="display: none;"><a href="./pages/register.html">Register</a></li>
+                <li id="profile-link" style="display: none;"><a href="./pages/profile.html">Profile</a></li>
             </ul>
         </nav>
         <a href="./pages/list-items.html"><button>Sell</button></a>
