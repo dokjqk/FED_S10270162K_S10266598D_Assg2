@@ -16,7 +16,7 @@ color: black;
 header, li, a, button{
 cursor: pointer;
 font-weight: 700;
-font-size: 20px;
+font-size: 1vw; /* Updated font-size to use vw */
 text-decoration: none;
 }
 
@@ -28,12 +28,12 @@ overflow: hidden;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0px 5%;
+padding: 0 5vw; /* Updated padding to use vw */
 }
 .nav-links {
 list-style: none;
 display: flex;
-gap: 20px;
+gap: 1vw;
 align-items: center;
 }
 .nav-links li {
@@ -49,12 +49,12 @@ text-decoration: none;
 color: #007bff;
 }
 button {
-padding: 9px 25px;
-background-color: rgba(82, 102, 126, 1);
-color: white;
-border: none;
-border-radius: 50px; 
-transition: all 0.3s ease 0s;
+  padding: 0.5vw 1.5vw; /* Updated padding to use vw */
+  background-color: rgba(82, 102, 126, 1);
+  color: white;
+  border: none;
+  border-radius: 50px; 
+  transition: all 0.3s ease 0s;
 }
 button:hover {
 background-color: rgba(82, 102, 126, 0.8);
@@ -64,32 +64,32 @@ background-color: rgba(82, 102, 126, 0.8);
 width: max-content;
 display: flex;
 align-items: center;
-padding: 14px;
+padding: 1vw; /* Updated padding to use vw */
 border-radius: 28px;
 background: #e9e9e9;
 }
 .search-input{
-font-size: 16px;
+font-size: 1vw; /* Updated font-size to use vw */
 color: #333333;
-margin-left: 14px; 
+margin-left: 1vw; /* Updated margin to use vw */
 outline: none;
 border: none;
 background: transparent;
-width: 800px;
+width: 40vw; /* Updated width to use vw */
 }
 
 /* Navigation CSS - end - */
 
 /* Index page */
 .banner {
-  margin: 20px auto;
+  margin: 1vw auto; /* Updated margin to use vw */
   width: 90%;
-  height:300px;
+  height: 15vw; /* Updated height to use vw */
   background-color: #E6E8E6;
-  border-radius: 10px;
+  border-radius: 0.5vw; /* Updated border-radius to use vw */
 }
 .banner img {
-  height: 300px;
+  height: 15vw; /* Updated height to use vw */
   width: 100%;
 }
 
@@ -98,7 +98,6 @@ width: 800px;
   flex-direction: column;
 }
 .category {
-
 height:300px;
 min-width: 15vw;
 background-color: #52667e;
@@ -109,41 +108,41 @@ align-items: center;
 border-radius: 20px;
 color: #f8f8f8;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added drop shadow */
-
 }
 .category:hover {
 transform: scale(1.05); /* Make the category bigger on hover */
 }
 .category img 
 {
-height: 200px;
+height: 15vw; /* Updated height to use vw */
 align-content: center;
 }
 
 .listings h2{
   padding-left: 3vw;
+  font-size: 1.5vw; /* Updated font-size to use vw */
 }
 .listings {
   display: flex;
-  gap: 20px;
+  gap: 1vw; /* Updated gap to use vw */
   justify-content: center;
-  padding: 20px;
+  padding: 1vw; /* Updated padding to use vw */
   flex-direction: column;
 }
 .grid{
 display: flex;
-gap: 50px;
+gap: 2.5vw; /* Updated gap to use vw */
 justify-content: center;
 }
-.cat-grid{
-display: flex;
-gap: 50px;
-justify-content: left;
-overflow-x: auto;
-scrollbar-width: none;
--ms-overflow-style: none;
-padding-top: 5px;
-padding-bottom: 5px;
+.cat-grid {
+  display: flex;
+  gap: 2.5vw; /* Updated gap to use vw */
+  justify-content: left;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-top: 0.25vw; /* Updated padding to use vw */
+  padding-bottom: 0.25vw; /* Updated padding to use vw */
 }
 .cat-grid::-webkit-scrollbar {
 display: none;
@@ -157,22 +156,21 @@ padding-right: 5%;
 background-color: #52667e;
 color: white;
 border: none;
-border-radius: 25px;
-padding: 5px 10px;
-margin: 10px;
+border-radius: 1.25vw; /* Updated border-radius to use vw */
+padding: 0.5vw 1vw; /* Updated padding to use vw */
+margin: 0.5vw; /* Updated margin to use vw */
 }
-
 
 .listing {
-height: 450px;
-width: 15vw;
-background-color: #e3ebff;
-display: flex;
-flex-direction: column;
-gap: 5px;
-border-radius: 10px;
-}
-
+  height: 450px;
+  width: 15vw;
+  background-color: #e3ebff;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 10px;
+  }
+  
 .listing img {
 height: 300px;
 border-radius: 10px;
@@ -293,17 +291,16 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 .details p {
 margin: 5px 0;
 }
-
 .details button {
-margin-top: 10px;
-padding: 10px 20px;
-background-color: #0f1a2c;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-}
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0f1a2c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
 
 .details button:hover {
 background-color: #1c3052;
@@ -313,8 +310,6 @@ background-color: #1c3052;
 height: 360px;
 border-radius: 10px;
 }
-
-
 /* Chatbox */
 .chatbox-container {
     position: relative;
@@ -324,24 +319,22 @@ border-radius: 10px;
 .chatbox {
 margin: 0;
 padding: 0;
-padding-right: 20px;
+padding-right: 1vw; /* Updated padding to use vw */
 box-sizing: border-box;
 font-family: "Inter", sans-serif;
-max-height: 80vh; /* Ensure the chatbox does not overflow the viewport */
+max-height: 40vw; /* Updated max-height to use vw */
 }
 #chatbox-toggler {
 position: fixed;
-bottom: 30px;
-right: 80px; /* Move slightly to the left */
+bottom: 1.5vw; /* Updated bottom to use vw */
+right: 4vw; /* Updated right to use vw */
 border: none;
-height: 50px;
-width: 50px;
+height: 2.5vw; /* Updated height to use vw */
+width: 2.5vw; /* Updated width to use vw */
 display: flex;
 align-items: center;
 justify-content: center;
 cursor: pointer;
-border-radius: 50%;
-background: #294678;
 transition: all 0.3s ease;
 color: #d2cfca;
 overflow: hidden; /* Prevent overflow */
@@ -617,76 +610,78 @@ align-items: center;
 display: flex;
 flex-direction: column;
 background-color: #f9f9f9;
-padding: 20px;
-border-radius: 10px;
-gap: 10px;
+padding: 1vw; /* Updated padding to use vw */
+border-radius: 0.5vw; /* Updated border-radius to use vw */
+gap: 0.5vw; /* Updated gap to use vw */
 width: 30vw;
-height: 350px;
+height: 17.5vw; /* Updated height to use vw */
+font-size: 1vw;
 }
 
-
-.form-items-left{
-height: 50px;
-width: 600px;
-background-color: #d6d8df ;
-display: flex;
-gap: 10px;
-align-items: center;
-justify-content: center;
-border-radius: 10px;
+/* ...existing code... */
+.form-items-left {
+    height: 2.5vw; /* Updated height to use vw */
+    width: 30vw; /* Updated width to use vw */
+    background-color: #d6d8df;
+    display: flex;
+    gap: 0.5vw; /* Updated gap to use vw */
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5vw; /* Updated border-radius to use vw */
 }
+/* ...existing code... */
 
 .create-list-image {
-height: 200px;
-width: 200px;
-background-color: #d6d8df;
-display: flex;
-align-items: center;
-justify-content: center;
-overflow: hidden;
-border-radius: 10px;
-
+  height: 10vw; /* Updated height to use vw */
+  width: 10vw; /* Updated width to use vw */
+  background-color: #d6d8df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5vw; /* Updated border-radius to use vw */
 }
 
+/* ...existing code... */
 .create-list-image-big {
-height: 400px;
-width: 400px;
-background-color: #d6d8df;
-display: flex;
-align-items: center;
-justify-content: center;
-overflow: hidden;
-border-radius: 10px;
-
+  height: 20vw; /* Updated height to use vw */
+  width: 20vw; /* Updated width to use vw */
+  background-color: #d6d8df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5vw; /* Updated border-radius to use vw */
 }
+/* ...existing code... */
 
-.create-list-images{
-display: flex;
-gap: 20px;
-
-
+/* ...existing code... */
+.create-list-images {
+  display: flex;
+  gap: 1vw; /* Updated gap to use vw */
 }
+/* ...existing code... */
 
 .create-list-image img {
-max-height: 200px;
-border-radius: 10px;
-width: auto; /* Ensure the image maintains its aspect ratio */
+  max-height: 10vw; /* Updated max-height to use vw */
+  border-radius: 0.5vw; /* Updated border-radius to use vw */
+  width: auto; /* Ensure the image maintains its aspect ratio */
 }
-
+/* ...existing code... */
 
 .list-right-side input,
 .list-right-side select,
 .list-right-side textarea {
-width: 100%;
-padding: 10px;
-border: 1px solid #ccc;
-border-radius: 5px;
-box-sizing: border-box;
+    width: 100%;
+    padding: 0.5vw; /* Updated padding to use vw */
+    border: 0.05vw solid #ccc; /* Updated border to use vw */
+    border-radius: 0.25vw; /* Updated border-radius to use vw */
+    box-sizing: border-box;
 }
 
 .profile-image img {
-height: 100px;
-border-radius: 50%;
+  height: 5vw; /* Updated height to use vw */
+  border-radius: 2.5vw; /* Updated border-radius to use vw */
 }
 
 .profile-header {
@@ -695,9 +690,10 @@ background-color: #c4c4c4;
 max-width: 30vw;
 align-items: center;
 justify-content: center;
-gap: 40px;
+gap: 2vw; /* Updated gap to use vw */
 margin-left: 4.2vw;
-border-radius: 20px;
+border-radius: 1vw; /* Updated border-radius to use vw */
+font-size: 1vw;
 }
 
 .profile-rating h2, h3{
@@ -733,24 +729,25 @@ font-size: 0.8vw; /* Make the text smaller */
 .profile-listings {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1vw; /* Updated gap to use vw */
   margin-left: 5vw;
   background-color: #c4c4c4;
   max-width: 70vw; /* Adjusted width */
-  padding: 20px; /* Add some padding */
-  border-radius: 10px; /* Add border radius */
+  padding: 1vw; /* Updated padding to use vw */
+  border-radius: 0.5vw; /* Updated border-radius to use vw */
+  font-size: 1vw;
 }
 
 .profile-review-tab {
   margin-left: 4.2vw;
   background-color: #c4c4c4;
   max-width: 75vw; /* Adjusted width */
-  padding: 20px; /* Add some padding */
-  border-radius: 10px; /* Add border radius */
+  padding: 1vw; /* Updated padding to use vw */
+  border-radius: 0.5vw; /* Updated border-radius to use vw */
 }
 
 .profile-listing-qty {
-  width: calc(20% - 8px);
+  width: calc(20% - 0.8vw); /* Updated width to use vw */
   text-align: left;
 }
 
@@ -758,33 +755,33 @@ font-size: 0.8vw; /* Make the text smaller */
 
 .profile-listing-qty img {
     width: 12vw; /* Set a fixed width */
-    height: 300px; /* Set a fixed height */
+    height: 15vw; /* Updated height to use vw */
     object-fit: cover; /* Maintain aspect ratio and cover the area */
-    border-radius: 2px;
+    border-radius: 0.1vw; /* Updated border-radius to use vw */
 }
 
 .profile-review-tab{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1vw; /* Updated gap to use vw */
 }
 .reviewer {
   display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 1vw; /* Updated gap to use vw */
+  margin-bottom: 1vw; /* Updated margin-bottom to use vw */
   align-items: center;
 }
 .reviewer img {
-  width: 3vw;
-  height: 3vw;
-  border-radius: 50%;
+  width: 3vw; /* Updated width to use vw */
+  height: 3vw; /* Updated height to use vw */
+  border-radius: 1.5vw; /* Updated border-radius to use vw */
 }
 
 .footer-images{
   display: flex;
-  gap: 20px;
+  gap: 1vw; /* Updated gap to use vw */
   justify-content: space-around;
-  padding: 20px;
+  padding: 1vw; /* Updated padding to use vw */
 }
 
 footer h2{
@@ -794,7 +791,7 @@ footer h2{
 .f-images {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1vw; /* Updated gap to use vw */
   align-items: center;
 }
 
@@ -972,8 +969,15 @@ footer h2{
   background-color: #41556b;
 }
 
-/* ...existing code... */
 
+footer{
+  font-size: 1.1vw;
+}
+
+
+.categories{
+  font-size: 1.1vw;
+}
 @media screen and (max-width: 1080px) {
   .chatbox{
     display: none;
