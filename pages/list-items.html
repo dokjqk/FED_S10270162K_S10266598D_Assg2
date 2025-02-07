@@ -13,37 +13,38 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><h2>MokeSell</h2></a>
-        <form action="">
+        <a href=""><h2>MokeSell</h2></a>
+        <form action="./pages/search-for-items.html">
             <div class="search">
                 <span class="search-icon material-symbols-outlined">search</span>
-                <input class="search-input" type="text" placeholder="Search for books">
+                <input class="search-input" type="text" name="query" placeholder="Search for books">
             </div>
         </form>
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Listings</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li id="login-link" style="display: none;"><a href="./login.html">Login</a></li>
+                <li id="register-link" style="display: none;"><a href="./register.html">Register</a></li>
+                <li id="profile-link" style="display: none;"><a href="./profile.html">Profile</a></li>
             </ul>
         </nav>
-        <a href="sell-button"><button>Sell</button></a>
+        <a href="./pages/list-items.html"><button>Sell</button></a>
     </header>
-    <form action="" method="post" enctype="multipart/form-data">
+    <form id="uploadForm" action="" method="post" enctype="multipart/form-data">
         <section class="list-items">
             <div class="list-left-side">
                 <div class="create-list-image-big">
                 </div>
                 <div class="form-items-left">
-                    <label for="image">Image</label>
-                    <input type="file" id="image" name="image">
+                    <label for="images">Images</label>
+                    <input type="file" id="images" name="images" multiple>
                 </div>
                 <div class="create-list-images">
-                    <div class="create-list-image">
+                    <div class="create-list-image 1">
                     </div>
-                    <div class="create-list-image">
+                    <div class="create-list-image 2">
                     </div>
-                    <div class="create-list-image">
+                    <div class="create-list-image 3">
                     </div>
                 </div>
             </div>
@@ -67,7 +68,7 @@
                     <label for="description">Description</label>
                     <textarea id="description" name="description"></textarea>
                 </div>
-                <button type="submit">Submit</button> <!-- Added button label -->
+                <button type="button">Submit</button> <!-- Changed type to "button" -->
             </div>
         </section>
     </form>

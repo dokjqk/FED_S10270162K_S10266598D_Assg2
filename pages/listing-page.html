@@ -11,21 +11,22 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><h2>MokeSell</h2></a>
-        <form action="">
+        <a href=""><h2>MokeSell</h2></a>
+        <form action="./pages/search-for-items.html">
             <div class="search">
                 <span class="search-icon material-symbols-outlined">search</span>
-                <input class="search-input" type="text" placeholder="Search for books">
+                <input class="search-input" type="text" name="query" placeholder="Search for books">
             </div>
         </form>
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Listings</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li id="login-link" style="display: none;"><a href="./login.html">Login</a></li>
+                <li id="register-link" style="display: none;"><a href="./register.html">Register</a></li>
+                <li id="profile-link" style="display: none;"><a href="./profile.html">Profile</a></li>
             </ul>
         </nav>
-        <a href="sell-button"><button>Sell</button></a>
+        <a href="./list-items.html"><button>Sell</button></a>
     </header>
     <div class="listing-page">
         <div class="listing-page-left">
@@ -55,7 +56,7 @@
             <div class="details">
                 <h4>Condition: Used</h4>
                 <p>Meetup: Yew Tee MRT</p>
-                <button>Message</button>
+                <button><a href="./messaging.html">Message</a></button>
             </div>
         </div>
     </div>
