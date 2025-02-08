@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <a href=""><h2>MokeSell</h2></a>
+        <a href="index.html"><h2>MokeSell</h2></a>
         <form action="./pages/search-for-items.html">
             <div class="search">
                 <span class="search-icon material-symbols-outlined">search</span>
@@ -35,107 +35,76 @@
     <div class="banner">
         <img src="./images/Book-Banner.jpg" alt="Book Banner">
     </div>
-    <section class="categories">
-        <div class="cat-header">
-            <h2>Browse by Category</h2>
-            <div>
-                <button id="scroll-left-button"><</button>
-                <button id="scroll-button">></button>
-            </div>
-        </div>
-        <div class="cat-grid" id="cat-grid">
-
-            <div class="category">
-                <a href="nonfiction.html">
-                <img src="./images/atomic-habits.jpg" alt="atomic-habits">
-                <h3>Non-fiction</h3>
-                </a>
-            </div>
-            <div class="category">
-                <a href="fiction.html">
-                <img src="./images/harry-potter.jpg" alt="harry potter">
-                </a>
-                <h3>Fiction</h3>
-            </div>
-            <div class="category">
-                <a href="manga.html">
-                <img src="./images/dandadan.jpg" alt="dandadan">
-                <h3>Manga</h3>
-                </a>
-            </div>
-            <div class="category">
-                <a href="comics.html">
-                <img src="./images/batman.jpg" alt="batman">
-                <h3>Comics</h3>
-                </a>
-            </div>
-            <div class="category">
-                <a href="fantasy.html">
-                <img src="./images/the-midnight-library.jpg " alt="the-midnight-library">
-                <h3>Fantasy</h3>
-                </a>
-            </div>
-            <div class="category">
-                <a href="japanese.html">
-                <img src="./images/norwegian-wood.jpg " alt="Atomic Habits">
-                <h3>Japanese</h3>
-                </a>
-            </div>
-        </div>
-    </section>
-
+    <div>
+        <button id="scroll-left-button" style="display: none;"><</button>
+        <button id="scroll-button" style="display: none;">></button>
+    </div>
+    
     <section class="listings">
-        <h2>Top books of the month</h2>
-        <div class="b-listings">
-            <a href="./pages/listing-page-ice-sandwich.html">
-                <div class="b-listing">
-                    <div class="b-listing-big">
-                        <img src="./images/ms-ice-sandwich.jpg" alt="ms-ice-sandwich">
-                        <h3>Ms Ice Sandwich</h3>
+        <h2>Fantasy</h2>
+        <h2>Bumped Listings</h2>
+        <div class="grid">
+            <a href="./pages/listing-page-hmc.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="./images/dokja-icon.jpg" alt="Icon">
+                        <h4>dokjqk</h4>
                     </div>
-                    <div class="b-listing-side">
-                        <div class="b-listing-small">
-                            <img src="./images/ms-ice-sandwich-used.jpg" alt="ms-ice-sandwich-used">
-                        </div>
-                        <div class="b-listing-small">
-                            <img src="./images/ms-ice-sandwich-used-same.jpg" alt="ms-ice-sandwich">
-                        </div>
-                    </div>
+                    <img src="./images/hmcc.jpg" alt="Howls-Moving-Castle">
+                    <h5>Howl's Moving Castle</h5>
+                    <h5>S$4</h5>
+                    <h5>Used</h5>
                 </div>
             </a>
-            <a href="./pages/listing-page-lotr.html">
-                <div class="b-listing">
-                    <div class="b-listing-big">
-                        <img src="./images/lord-of-the-ring.jpg" alt="lord-of-the-ring">
-                        <h3>Lord of the Rings</h3>
+            <a href="./pages/listing-page-cos.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="./images/dokja-icon.jpg" alt="Icon">
+                        <h4>dokjqk</h4>
                     </div>
-                    <div class="b-listing-side">
-                        <div class="b-listing-small">
-                            <img src="./images/lotr2.jpg" alt="lord-of-the-ring">
-                        </div>
-                        <div class="b-listing-small">
-                            <img src="./images/lotr3.jpg" alt="lord-of-the-ring">
-                        </div>
-                    </div>
+                    <img src="./images/cos.jpg" alt="It-Ends-With-Us">
+                    <h5>City Of Stars</h5>
+                    <h5>S$10</h5>
+                    <h5>Used</h5>
                 </div>
             </a>
-            <a href="./pages/listing-page-blue-lock.html    ">
-                <div class="b-listing">
-                    <div class="b-listing-big">
-                        <img src="./images/blue-lock.jpg" alt="blue-lock">
-                        <h3>Blue Lock</h3>
+            <a href="./pages/listing-page-evermore.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="./images/iu-icon.jpg" alt="Icon">
+                        <h4>iu-uaena</h4>
                     </div>
-                    <div class="b-listing-side">
-                        <div class="b-listing-small">
-                            <img src="./images/blue-lock-used.webp" alt="blue-lock-back">
-                        </div>
-                        <div class="b-listing-small">
-                            <img src="./images/blue-lock-back.png" alt="blue-lock-used">
-                        </div>
-                    </div>
+                    <img src="./images/evermore.jpg" alt="EverMore">
+                    <h5>EverMore</h5>
+                    <h5>S$8</h5>
+                    <h5>Used</h5>
                 </div>
             </a>
-        </div>
+            <a href="./pages/listing-page-cow.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="./images/taerae-icon.jpg" alt="Icon">
+                        <h4>t.rae</h4>
+                    </div>
+                    <img src="./images/cow.jpg" alt="Court-Of-Winter">
+                    <h5>Court Of Winter</h5>
+                    <h5>S$10</h5>
+                    <h5>New</h5>
+                </div>
+            </a>
+            <a href="./pages/listing-page-ndc.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="./images/icon.jpg" alt="Icon">
+                        <h4>m.wizard</h4>
+                    </div>
+                    <img src="./images/NDC.jpg" alt="New-Dragon-City">
+                    <h5>New Dragon City</h5>
+                    <h5>S$10</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+        </div>   
     </section>
     <section class="listings">
         <h2>Explore Listings</h2>
@@ -195,7 +164,7 @@
                         <h4>m.wizard</h4>
                     </div>
                     <img src="./images/lord-of-the-ring.jpg" alt="lord-of-the-ring">
-                    <h5>Lord of the Rings</h5>
+                    <h5>Lord of the Ring</h5>
                     <h5>S$10</h5>
                     <h5>Used</h5>
                 </div>
@@ -266,6 +235,11 @@
             </a>
         </div>   
     </section>
+    
+
+    <br>
+    <br>
+    <br>
     <footer>
         <h2>Sell and buy every kind of thing on MokeSell</h2>
         <div class="footer-images">
@@ -324,5 +298,6 @@
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="category.js"></script>
 </body>
 </html>
