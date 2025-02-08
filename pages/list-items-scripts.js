@@ -115,13 +115,10 @@ document.querySelector('button[type="button"]').addEventListener('click', async 
         return response.json();
     }).then(data => {
         console.log('Success:', data);
-        alert('Listing created successfully!');
-        window.location.href = './profile.html';
     }).catch(error => {
         console.error('Error:', error);
     });
 });
-
 function updateNavLinks() {
     const username = localStorage.getItem('username');
     const loginLink = document.getElementById('login-link');
@@ -145,14 +142,7 @@ function updateNavLinks() {
 }
 
 // Call the function when the page loads
-document.addEventListener('DOMContentLoaded', function() {
-    const username = localStorage.getItem('username');
-    if (!username) {
-        alert('You are not logged in. Redirecting to the homepage.');
-        window.location.href = '../index.html';
-    }
-    updateNavLinks();
-});
+document.addEventListener('DOMContentLoaded', updateNavLinks);
 
 document.getElementById('logout-link').addEventListener('click', function() {
     localStorage.removeItem('username');
