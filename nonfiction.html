@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <a href=""><h2>MokeSell</h2></a>
+        <a href="index.html"><h2>MokeSell</h2></a>
         <form action="./pages/search-for-items.html">
             <div class="search">
                 <span class="search-icon material-symbols-outlined">search</span>
@@ -35,55 +35,77 @@
     <div class="banner">
         <img src="./images/Book-Banner.jpg" alt="Book Banner">
     </div>
-    <section class="categories">
-        <div class="cat-header">
-            <h2>Browse by Category</h2>
-            <div>
-                <button id="scroll-left-button"><</button>
-                <button id="scroll-button">></button>
-            </div>
-        </div>
-        <div class="cat-grid" id="cat-grid">
-
-            <div class="category">
-                <a href="nonfiction.html">
-                <img src="./images/atomic-habits.jpg" alt="atomic-habits">
-                <h3>Non-fiction</h3>
-                </a>
-            </div>
-            <div class="category">
-                <a href="fiction.html">
-                <img src="./images/harry-potter.jpg" alt="harry potter">
-                </a>
-                <h3>Fiction</h3>
-            </div>
-            <div class="category">
-                <img src="./images/dandadan.jpg" alt="dandadan">
-                <h3>Manga</h3>
-            </div>
-            <div class="category">
-                <img src="./images/batman.jpg" alt="batman">
-                <h3>Comics</h3>
-            </div>
-            <div class="category">
-                <img src="./images/steve-jobs.jpg " alt="steve-jobs">
-                <h3>Biography</h3>
-            </div>
-            <div class="category">
-                <img src="./images/the-midnight-library.jpg " alt="the-midnight-library">
-                <h3>Fantasy</h3>
-            </div>
-            <div class="category">
-                <img src="./images/norwegian-wood.jpg " alt="Atomic Habits">
-                <h3>Japanese</h3>
-            </div>
-            <div class="category">
-                <img src="./images/The-Fervor.jpg" alt="Horror">
-                <h3>Horror</h3>
-            </div>
-        </div>
+    <div>
+        <button id="scroll-left-button" style="display: none;"><</button>
+        <button id="scroll-button" style="display: none;">></button>
+    </div>
+    
+    <section class="listings">
+        <h2>Non-fiction books</h2>
+        <h2>Bumped Listings</h2>
+        <div class="grid">
+            <a href="./pages/listing-page-habits.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="./images/dokja-icon.jpg" alt="Icon">
+                        <h4>dokjqk</h4>
+                    </div>
+                    <img src="./images/atomic-habits.jpg" alt="atomic-habits">
+                    <h5>Atomic Habits</h5>
+                    <h5>S$4</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+            <a href="./pages/listing-page-wcbs.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="./images/dokja-icon.jpg" alt="Icon">
+                        <h4>dokjqk</h4>
+                    </div>
+                    <img src="./images/whycagedbirdssings.jpg" alt="Why-Caged-Birds-Sings">
+                    <h5>Why Caged Birds Sings</h5>
+                    <h5>S$10</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+            <a href="./pages/listing-page-row.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="./images/iu-icon.jpg" alt="Icon">
+                        <h4>iu-uaena</h4>
+                    </div>
+                    <img src="./images/roadofwar.jpg" alt="road-of-war">
+                    <h5>The Roads Of War</h5>
+                    <h5>S$15</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+            <a href="./pages/listing-page-LAP.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="./images/taerae-icon.jpg" alt="Icon">
+                        <h4>t.rae</h4>
+                    </div>
+                    <img src="./images/lifeafterpower.jpg" alt="Life-After-Power">
+                    <h5>Life After Power</h5>
+                    <h5>S$10</h5>
+                    <h5>New</h5>
+                </div>
+            </a>
+            <a href="./pages/listing-page-educated.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="./images/icon.jpg" alt="Icon">
+                        <h4>m.wizard</h4>
+                    </div>
+                    <img src="./images/educated.jpg" alt="educated">
+                    <h5>Educated</h5>
+                    <h5>S$10</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+        </div>   
     </section>
-
     <section class="listings">
         <h2>Explore Listings</h2>
         <div class="grid">
@@ -213,6 +235,11 @@
             </a>
         </div>   
     </section>
+    
+
+    <br>
+    <br>
+    <br>
     <footer>
         <h2>Sell and buy every kind of thing on MokeSell</h2>
         <div class="footer-images">
@@ -271,5 +298,6 @@
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="category.js"></script>
 </body>
 </html>
