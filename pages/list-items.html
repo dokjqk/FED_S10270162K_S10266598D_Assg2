@@ -13,8 +13,8 @@
 </head>
 <body>
     <header>
-        <a href=""><h2>MokeSell</h2></a>
-        <form action="./pages/search-for-items.html">
+        <a href="../index.html"><h2>MokeSell</h2></a>
+        <form action="./search-for-items.html">
             <div class="search">
                 <span class="search-icon material-symbols-outlined">search</span>
                 <input class="search-input" type="text" name="query" placeholder="Search for books">
@@ -26,9 +26,10 @@
                 <li id="login-link" style="display: none;"><a href="./login.html">Login</a></li>
                 <li id="register-link" style="display: none;"><a href="./register.html">Register</a></li>
                 <li id="profile-link" style="display: none;"><a href="./profile.html">Profile</a></li>
+                <li id="logout-link" style="display: none;"><a href="#">Logout</a></li>
             </ul>
         </nav>
-        <a href="./pages/list-items.html"><button>Sell</button></a>
+        <a href="./list-items.html"><button>Sell</button></a>
     </header>
     <form id="uploadForm" action="" method="post" enctype="multipart/form-data">
         <section class="list-items">
@@ -37,7 +38,7 @@
                 </div>
                 <div class="form-items-left">
                     <label for="images" style="font-size: 1vw;">Images</label> <!-- Updated font-size to use vw -->
-                    <input type="file" id="images" name="images" multiple style="width: 20vw;"> <!-- Updated width to use vw -->
+                    <input type="file" id="images" name="images" multiple> <!-- Updated width to use vw -->
                 </div>
                 <div class="create-list-images">
                     <div class="create-list-image 1">
