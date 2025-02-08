@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.send-offer').forEach(button => {
                 button.textContent = 'Send Offer';
             });
+            // Reset the "send-review" display to none
+            document.querySelector('.user-chat.user-right .send-review').style.display = 'none';
         });
     }
 
@@ -60,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelectorAll('.send-offer').forEach(button => {
         button.addEventListener('click', function() {
+            if (button.textContent === 'Offer Sent') return; // Prevent multiple clicks
+
             button.textContent = 'Offer Sent';
             const userRight = document.querySelector('.user-chat.user-right');
             const listingTitle = userRight.querySelector('.user-chat-info h3').textContent;
@@ -72,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
             messageContent.innerHTML = `<h3>Send Offer</h3><h3>${listingTitle}</h3><p>${listingPrice}</p>`;
             messageDiv.appendChild(messageContent);
             document.querySelector('.text-messages').appendChild(messageDiv);
+            textMessages.scrollTop = textMessages.scrollHeight; // Scroll to the bottom
 
             setTimeout(() => {
                 const responseDiv = document.createElement('div');
@@ -81,8 +86,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 responseContent.innerHTML = `<h3>Offer accepted</h3><h3>${listingTitle}</h3><p>${listingPrice}</p>`;
                 responseDiv.appendChild(responseContent);
                 document.querySelector('.text-messages').appendChild(responseDiv);
+                textMessages.scrollTop = textMessages.scrollHeight; // Scroll to the bottom
+
+                // Change the class "send-review" to display: block
+                userRight.querySelector('.send-review').style.display = 'block';
             }, 2000);
         });
+    });
+
+    document.querySelector('.send-review').addEventListener('click', function() {
+        const userRight = document.querySelector('.user-chat.user-right');
+        const reviewData = {
+            listingImage: userRight.querySelector('.image-listing-chat img').src,
+            profileImage: userRight.querySelector('.image-user-chat img').src,
+            username: userRight.querySelector('.image-user-chat h4').textContent,
+            listingTitle: userRight.querySelector('.user-chat-info h3').textContent,
+            listingPrice: userRight.querySelector('.user-chat-info p').textContent
+        };
+        localStorage.setItem('reviewData', JSON.stringify(reviewData));
+        window.location.href = './send-review.html'; // Redirect to send-review.html
     });
 
     document.querySelectorAll('.image-user-chat').forEach(image => {
