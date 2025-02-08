@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Had That Same Dream Again</title>
+    <link rel="stylesheet" href="../styles.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h2>MokeSell</h2></a>
+        <form action="./search-for-items.html">
+            <div class="search">
+                <span class="search-icon material-symbols-outlined">search</span>
+                <input class="search-input" type="text" name="query" placeholder="Search for books">
+            </div>
+        </form>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Listings</a></li>
+                <li id="login-link" style="display: none;"><a href="./login.html">Login</a></li>
+                <li id="register-link" style="display: none;"><a href="./register.html">Register</a></li>
+                <li id="profile-link" style="display: none;"><a href="./profile.html">Profile</a></li>
+                <li id="logout-link" style="display: none;"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+        <a href="./list-items.html"><button>Sell</button></a>
+    </header>
+    <div class="listing-page">
+        <div class="listing-page-left">
+            <div class="listing-image" id="main-listing-image">
+                <img src="../images/llm.webp" alt="main-image">
+            </div>
+            <div class="small-listing-image">
+                <div class="listing-image-small" onclick="updateMainImage(this)">
+                    <img src="../images/llm.webp" alt="image-one">
+                </div>
+                <div class="listing-image-small" onclick="updateMainImage(this)">
+                    <img src="../images/llm1.webp" alt="image-two">
+                </div>
+                <div class="listing-image-small" onclick="updateMainImage(this)">
+                    <img src="../images/llm2.webp" alt="image-three">
+                </div>
+            </div>
+        </div>
+        <div class="listing-page-right">
+            <h4>Japanese</h4>
+            <h2>I Had That Same Dream Again</h2>
+            <h3>SGD 10</h3>
+            <div class="profile">
+                <img src="../images/dokja-icon.jpg" alt="Icon">
+                <h4><m class="wizard"></m></h4>
+            </div>
+            <div class="details">
+                <h4>Condition: New</h4>
+                <p>Meetup: Yew Tee MRT. In wonderful condition. Read it a few times.</p>
+                <button><a href="./messaging.html">Message</a></button>
+            </div>
+        </div>
+    </div>
+    <section class="listings">
+        <h2>Explore Other Listings</h2>
+        <div class="grid">
+            <a href="./listing-page-prince.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="../images/minji.icon.jpg" alt="Icon">
+                        <h4>minji.s</h4>
+                    </div>
+                    <img src="../images/the-little-prince.jpg" alt="the-little-prince">
+                    <h5>The Little Prince</h5>
+                    <h5>S$2</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+            <a href="./listing-page-twilight.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="../images/iu-icon.jpg" alt="Icon">
+                        <h4>iu-uaena</h4>
+                    </div>
+                    <img src="../images/twilight.jpg" alt="twilight">
+                    <h5>Twilight</h5>
+                    <h5>S$10</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+            <a href="./listing-page-the-midnight.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="../images/minji.icon.jpg" alt="Icon">
+                        <h4>minji.s</h4>
+                    </div>
+                    <img src="../images/the-midnight-library.jpg" alt="the-midnight-library">
+                    <h5>The Midnight Library</h5>
+                    <h5>S$8</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+            <a href="./listing-page-got.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="../images/jon-snow.jpg" alt="Icon">
+                        <h4>jon.snow</h4>
+                    </div>
+                    <img src="../images/a-dance-with-dragon.jpg" alt="a-dance-with-dragons">
+                    <h5>A Dance with Dragons</h5>
+                    <h5>S$20</h5>
+                    <h5>New</h5>
+                </div>
+            </a>
+            <a href="./listing-page-orv.html">
+                <div class="listing">
+                    <div class="listing-icon">
+                        <img src="../images/han-sooyoung-icon.jpg" alt="Icon">
+                        <h4>sooyoung</h4>
+                    </div>
+                    <img src="../images/orv.jpg" alt="orv">
+                    <h5>Omniscent Reader</h5>
+                    <h5>S$5</h5>
+                    <h5>Used</h5>
+                </div>
+            </a>
+        </div>   
+    </section>
+    <script src="./listing-page-script.js"></script>
+</body>
+</html>
