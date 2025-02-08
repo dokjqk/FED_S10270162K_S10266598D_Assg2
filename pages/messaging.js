@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         userRight.querySelector('.image-user-chat h4').textContent = username;
     }
 
-    document.querySelectorAll('.user-chat').forEach(chat => {
+    function addChatEventListeners(chat) {
         chat.addEventListener('click', function() {
             updateChatDetails(chat);
             document.querySelectorAll('.text-messages .message:not(.initial)').forEach(message => {
@@ -52,6 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 button.textContent = 'Send Offer';
             });
         });
+    }
+
+    document.querySelectorAll('.user-chat').forEach(chat => {
+        addChatEventListeners(chat);
     });
 
     document.querySelectorAll('.send-offer').forEach(button => {
@@ -111,7 +115,15 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
         document.querySelector('.messages-left').appendChild(newChatDiv);
+        addChatEventListeners(newChatDiv); // Add event listener to the new chat
         localStorage.removeItem('newChat');
+    }
+
+    // Check if user is logged in
+    const username = localStorage.getItem('username');
+    if (!username) {
+        alert('You need to be logged in to access this page.');
+        window.location.href = '../index.html';
     }
 });
 

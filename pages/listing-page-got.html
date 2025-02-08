@@ -56,7 +56,7 @@
             <div class="details">
                 <h4>Condition: New</h4>
                 <p>Meetup: Yew Tee MRT. In wonderful condition. Read it a few times.</p>
-                <button id="message-button">Message</button>
+                <button><a href="./messaging.html">Message</a></button>
             </div>
         </div>
     </div>
@@ -125,19 +125,6 @@
             </a>
         </div>   
     </section>
-    <script>
-        document.getElementById('message-button').addEventListener('click', function() {
-            const chatData = {
-                profileImage: '../images/jon-snow.jpg',
-                username: '@jon.snow',
-                listingTitle: 'A Dance with Dragons',
-                listingPrice: '$20',
-                listingImage: '../images/a-dance-with-dragon.jpg'
-            };
-            localStorage.setItem('newChat', JSON.stringify(chatData));
-            window.location.href = './messaging.html';
-        });
-    </script>
     <script src="./listing-page-script.js"></script>
 </body>
 </html>

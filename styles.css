@@ -1,11 +1,11 @@
 body {
   font-family: Arial, sans-serif;
   box-sizing: border-box;
-  background-color: #f8f8f8;
+  background-color: #21212E;
   margin: 0;
   padding-left: 5vw;
   padding-right: 5vw;
-  color: #1b1b1b;
+  color: #F5F2FF;
 }
 
 
@@ -20,10 +20,15 @@ font-size: 1vw; /* Updated font-size to use vw */
 text-decoration: none;
 }
 
+a {
+  color: #F5F2FF !important;
+  text-decoration: none !important;
+}
+
 header{
 position: sticky;
 top: 0; /* Ensure the header sticks to the top */
-background-color: #f8f8f8;
+background-color: #21212e;
 overflow: hidden;
 display: flex;
 justify-content: space-between;
@@ -50,12 +55,13 @@ color: #007bff;
 }
 button {
   padding: 0.5vw 1.5vw; /* Updated padding to use vw */
-  background-color: rgba(82, 102, 126, 1);
-  color: white;
+  background-color: #8482A7;
+  color: #F5F2FF;
   border: none;
   border-radius: 50px; 
   transition: all 0.3s ease 0s;
 }
+
 button:hover {
 background-color: rgba(82, 102, 126, 0.8);
 }
@@ -64,9 +70,22 @@ background-color: rgba(82, 102, 126, 0.8);
 width: max-content;
 display: flex;
 align-items: center;
-padding: 1vw; /* Updated padding to use vw */
+padding: 0.5vw 1vw; /* Updated padding to use vw */
 border-radius: 28px;
-background: #e9e9e9;
+background: #383843;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added drop shadow */
+transition: background-color 0.3s ease;
+}
+.search:hover {
+  background: #F5F2FF; /* Change background color on hover */
+}
+
+.search:hover .search-icon {
+  color: #383843; /* Change icon color on hover */
+}
+
+.search:hover ::placeholder {
+  color: #383843; /* Change placeholder color on hover */
 }
 .search-input{
 font-size: 1vw; /* Updated font-size to use vw */
@@ -76,6 +95,11 @@ outline: none;
 border: none;
 background: transparent;
 width: 40vw; /* Updated width to use vw */
+}
+
+
+.search-input::placeholder {
+  color: #F5F2FF; /* Updated placeholder color */
 }
 
 /* Navigation CSS - end - */
@@ -114,7 +138,7 @@ width: 40vw; /* Updated width to use vw */
 .category {
   height: 15vw; /* Updated height to use vw */
   min-width: 15vw;
-  background-color: #52667e;
+  background-color: #383843;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,17 +147,20 @@ width: 40vw; /* Updated width to use vw */
   color: #f8f8f8;
   box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.2); /* Updated box-shadow to use vw */
   gap: 0.5vw; /* Updated gap to use vw */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth hover effect */
 }
-/* ...existing code... */
 
 .category:hover {
-transform: scale(1.05); /* Make the category bigger on hover */
+  transform: scale(1.05); /* Make the category bigger on hover */
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
-.category img 
-{
-height: 10vw; /* Updated height to use vw */
-align-content: center;
+
+.category img {
+  height: 10vw; /* Updated height to use vw */
+  align-content: center;
+  border-radius: 0.5vw; /* Added border-radius to images */
 }
+/* ...existing code... */
 
 .listings h2{
   font-size: 1.3vw; /* Updated font-size to use vw */
@@ -171,7 +198,7 @@ justify-content: space-between;
 padding-right: 5%;
 }
 .cat-header button{
-background-color: #52667e;
+background-color: #383843;
 color: white;
 border: none;
 border-radius: 1.25vw; /* Updated border-radius to use vw */
@@ -183,11 +210,12 @@ margin: 0.5vw; /* Updated margin to use vw */
 .listing {
   height: 24vw; /* Updated height to use vw */
   width: 15vw;
-  background-color: #e3ebff;
+  background-color: #47465a;
   display: flex;
   flex-direction: column;
   gap: 0.25vw; /* Updated gap to use vw */
   border-radius: 0.5vw; /* Updated border-radius to use vw */
+  box-shadow: 0 4px 8px rgba(153, 151, 151, 0.1); /* Added drop shadow */
 }
 /* ...existing code... */
   
@@ -227,7 +255,7 @@ margin: 0;
   display: flex;
   height: 16vw; /* Updated height to use vw */
   width: 36vw; /* Updated width to use vw */
-  background-color: #e9e9e9;
+  background-color: #47465a;
   justify-content: center;
 }
 
@@ -235,9 +263,10 @@ margin: 0;
 cursor: pointer;
 height: 10vw; /* Updated height to use vw */
 width: 10vw; /* Updated width to use vw */
-background-color: #e9e9e9;
+background-color: #21212e;
 display: flex;
 justify-content: center;
+padding: 0.5vw;
 }
 .listing-image-small img{
 height: 10vw; /* Updated height to use vw */
@@ -265,7 +294,7 @@ gap: 20px;
 padding: 20px;
 align-items: flex-start;
 justify-content: center;
-background-color: #ffffff;
+background-color: #47465a;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 border-radius: 10px;
 margin: 20px auto;
@@ -294,17 +323,17 @@ margin: 0;
 
 .listing-page-right h2 {
   font-size: 2vw; /* Updated font-size to use vw */
-  color: #333333;
+  color: #F5F2FF;
 }
 
 .listing-page-right h3 {
   font-size: 1.5vw; /* Updated font-size to use vw */
-  color: #25476c;
+  color: #F5F2FF;
 }
 
 .listing-page-right h4 {
   font-size: 1.25vw; /* Updated font-size to use vw */
-  color: #333333;
+  color: #F5F2FF;
 }
 
 /* ...existing code... */
@@ -318,7 +347,7 @@ margin: 0;
   margin: 0;
   border: 0;
   border-radius: 0.5vw; /* Updated border-radius to use vw */
-  background-color: #f8f8f8;
+  background-color: #21212e;
   box-shadow: 0 0.1vw 0.2vw rgba(0, 0, 0, 0.1); /* Updated box-shadow to use vw */
 }
 
@@ -335,7 +364,7 @@ margin: 0;
 .details button {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #0f1a2c;
+  background-color: #42424d;
   color: white;
   border: none;
   border-radius: 5px;
@@ -628,7 +657,7 @@ color: #fffbf4;
 
 .list-items {
 padding-top: 10px;
-background-color: #eaeaea;
+background-color: #383843;
 height: 700px;
 width: 80vw;
 margin: 0 auto;
@@ -649,20 +678,27 @@ align-items: center;
 .list-right-side {
 display: flex;
 flex-direction: column;
-background-color: #f9f9f9;
+background-color: #3c3c54; /* Updated background color */
 padding: 1vw; /* Updated padding to use vw */
 border-radius: 0.5vw; /* Updated border-radius to use vw */
 gap: 0.5vw; /* Updated gap to use vw */
 width: 30vw;
 height: 17.5vw; /* Updated height to use vw */
 font-size: 1vw;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better visual separation */
+transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.list-right-side:hover {
+  background-color: #47465a; /* Change background color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
 /* ...existing code... */
 .form-items-left {
     height: 2.5vw; /* Updated height to use vw */
     width: 30vw; /* Updated width to use vw */
-    background-color: #d6d8df;
+    background-color: #47465a;
     display: flex;
     gap: 0.5vw; /* Updated gap to use vw */
     align-items: center;
@@ -674,7 +710,7 @@ font-size: 1vw;
 .create-list-image {
   height: 10vw; /* Updated height to use vw */
   width: 10vw; /* Updated width to use vw */
-  background-color: #d6d8df;
+  background-color: #47465a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -686,7 +722,7 @@ font-size: 1vw;
 .create-list-image-big {
   height: 20vw; /* Updated height to use vw */
   width: 20vw; /* Updated width to use vw */
-  background-color: #d6d8df;
+  background-color: #47465a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -726,7 +762,7 @@ font-size: 1vw;
 
 .profile-header {
 display: flex;
-background-color: #c4c4c4;
+background-color: #3c3c54;
 max-width: 30vw;
 align-items: center;
 justify-content: center;
@@ -771,7 +807,7 @@ font-size: 0.8vw; /* Make the text smaller */
   flex-wrap: wrap;
   gap: 1vw; /* Updated gap to use vw */
   margin-left: 5vw;
-  background-color: #c4c4c4;
+  background-color: #3c3c54;
   max-width: 70vw; /* Adjusted width */
   padding: 1vw; /* Updated padding to use vw */
   border-radius: 0.5vw; /* Updated border-radius to use vw */
@@ -780,24 +816,30 @@ font-size: 0.8vw; /* Make the text smaller */
 
 .profile-review-tab {
   margin-left: 4.2vw;
-  background-color: #c4c4c4;
+  background-color: #383843;
   max-width: 75vw; /* Adjusted width */
   padding: 1vw; /* Updated padding to use vw */
   border-radius: 0.5vw; /* Updated border-radius to use vw */
 }
 
 .profile-listing-qty {
-  width: calc(20% - 0.8vw); /* Updated width to use vw */
+  width: calc(20% - 2vw); /* Updated width to use vw */
   text-align: left;
+  background-color: #383843;
+  padding: 0.5vw; /* Updated padding to use vw */
+  border-radius: 0.5vw; /* Updated border-radius to use vw */
+
+}
+
+.profile-listing-qty h3 {
+  font-size: 0.8vw;
 }
 
 
-
 .profile-listing-qty img {
-    width: 12vw; /* Set a fixed width */
-    height: 15vw; /* Updated height to use vw */
+    height: 16vw; /* Updated height to use vw */
     object-fit: cover; /* Maintain aspect ratio and cover the area */
-    border-radius: 0.1vw; /* Updated border-radius to use vw */
+    border-radius: 0.3vw; /* Updated border-radius to use vw */
 }
 
 .profile-review-tab{
@@ -841,7 +883,7 @@ footer h2{
   display: flex;
   gap: 20px;
   padding: 20px;
-  background-color: #c4c4c4; /* Change background color to match the rest of the page */
+  background-color: #383843; /* Change background color to match the rest of the page */
 }
 
 .messages-left {
@@ -850,7 +892,7 @@ footer h2{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: #f0f0f0;
+  background-color: #21212e;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   height:70vh; /* Change to take the whole length of the page */
@@ -861,7 +903,7 @@ footer h2{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: #ffffff;
+  background-color: #21212e;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -883,15 +925,26 @@ footer h2{
   gap: 10px;
   align-items: center;
   padding: 20px 0;
-  background-color: #e9e9e9;
+  background-color: #21212e;
   border-radius: 10px;
   transition: background-color 0.3s ease;
   justify-content: space-around;
 }
 
 .user-chat:hover {
-  background-color: #d9d9d9;
+  background-color: #f5f2ff;
 }
+
+.user-chat:hover h3 {
+  color: #21212e;
+}
+.user-chat:hover h4 {
+  color: #21212e;
+}
+.user-chat:hover p {
+  color: #21212e;
+}
+
 
 .user-chat-info h4 {
   margin: 0;
@@ -932,7 +985,7 @@ footer h2{
   flex-direction: column;
   gap: 10px;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: #21212e;
   border-radius: 10px;
   max-height: 400px;
   overflow-y: auto;
@@ -976,15 +1029,16 @@ footer h2{
   display: flex;
   gap: 10px;
   padding: 10px;
-  background-color: #f0f0f0;
+  background-color: #21212e; /* Updated background color */
   border-top: 1px solid #ccc;
   border-radius: 0 0 10px 10px;
   align-items: center; /* Ensure items are centered vertically */
   justify-content: space-between; /* Distribute space evenly */
-  color: black;
+  color: #F5F2FF; /* Updated text color */
   position: absolute; /* Position it absolutely */
   bottom: 0; /* Align it to the bottom */
   width: calc(100% - 40px); /* Adjust width to fit within padding */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for better visual separation */
 }
 
 .message-input {
@@ -993,12 +1047,14 @@ footer h2{
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
+  background-color: #21212e; /* Updated background color */
+  color: #F5F2FF; /* Updated text color */
 }
 
 .send-message {
   padding: 10px 20px;
-  background-color: #52667e;
-  color: white;
+  background-color: #8482A7;
+  color: #F5F2FF;
   border: none;
   border-radius: 5px;
   cursor: pointer;
