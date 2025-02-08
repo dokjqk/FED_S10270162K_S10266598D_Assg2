@@ -682,7 +682,7 @@ padding: 1vw; /* Updated padding to use vw */
 border-radius: 0.5vw; /* Updated border-radius to use vw */
 gap: 0.5vw; /* Updated gap to use vw */
 width: 30vw;
-height: 17.5vw; /* Updated height to use vw */
+height: 20vw; /* Updated height to use vw */
 font-size: 1vw;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better visual separation */
 transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth hover effect */
@@ -866,7 +866,8 @@ font-size: 0.8vw; /* Make the text smaller */
 }
 
 footer h2{
-  margin-left: 4vw;
+  margin-left: 1.5vw;
+  font-size: 1.4vw;
 }
 
 .f-images {
@@ -1198,6 +1199,64 @@ form button:hover {
 .review-items {
   background-color: #47465a;
   padding: 1vw;
+  border-radius: 0.5vw;
+}
+
+.b-listings {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.b-listing {
+  width: 30vw;
+  height: 20vw;
+  background-color: #21212e;
+  display: flex;
+  gap: 0.2vw;
+}
+.b-listing-big {
+  width: 14vw;
+  height: 20vw;
+  background-color: #47465a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2vw;
+  border-radius: 0.2vw 0 0 0.2vw;
+}
+
+.b-listing-small{
+  width: 14vw;
+  height: 10vw;
+  background-color: #47465a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0.2vw 0.2vw 0;
+
+}
+a h3{
+  font-size: 1vw;
+  margin: 0;
+}
+
+.b-listing-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vw;
+  
+}
+
+.b-listing-big img {
+  height: 16vw;
+  border-radius: 0 0.5vw 0.5vw 0;
+}
+
+.b-listing-small img {
+  height: 9vw;
   border-radius: 0.5vw;
 }
 
