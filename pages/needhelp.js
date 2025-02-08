@@ -28,6 +28,12 @@ form.addEventListener("submit", async function (event) {
             messageBox.classList.add("success");
             messageBox.style.display = "block";
             form.reset();
+
+            // Redirect to the register page after a successful submission
+            setTimeout(() => {
+                window.location.href = "register.html"; // Redirect to the register page
+            }, 2000); // 2-second delay before redirecting
+
         } else {
             messageBox.textContent = "Error submitting request. Please try again.";
             messageBox.classList.add("error");
