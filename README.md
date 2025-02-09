@@ -58,7 +58,7 @@ I used Generative AI to help me with some of the redirect options, AI chatbox im
 
 Examples below:
 - Add user listings
-![alt text](https://raw.githubusercontent.com/dokjqk/FED_S10270162K_S10266598D_Assg2/refs/heads/main/GenAI.PNG)
+![alt text](https://raw.githubusercontent.com/dokjqk/FED_S10270162K_S10266598D_Assg2/refs/heads/main/images/GenAI.PNG)
 - Gen AI assisted me in helping me figure out how to use imgbb's API to submit images for the listings.
 
 ## Credit and References
