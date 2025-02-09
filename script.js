@@ -17,12 +17,12 @@ const chatBody = document.querySelector(".chat-body");
 const messageInput = document.querySelector(".message-input");
 const sendMessageButton = document.querySelector("#send-message");
 
-const API_KEY = "API_KEY"; // Replace with your API key
+const API_KEY = "API-KEY"; // Replace with your API key
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 const userData = {
     message: null
-}
+}   
 
 const chatbotToggler = document.querySelector("#chatbox-toggler");
 const closeChatbot = document.querySelector("#close-chatbot");

@@ -115,10 +115,13 @@ document.querySelector('button[type="button"]').addEventListener('click', async 
         return response.json();
     }).then(data => {
         console.log('Success:', data);
+        alert('Your listing has been submitted successfully!');
     }).catch(error => {
         console.error('Error:', error);
+        alert('There was an error submitting your listing. Please try again.');
     });
 });
+
 function updateNavLinks() {
     const username = localStorage.getItem('username');
     const loginLink = document.getElementById('login-link');
@@ -141,8 +144,19 @@ function updateNavLinks() {
     }
 }
 
+function checkLogin() {
+    const username = localStorage.getItem('username');
+    if (!username) {
+        alert('You must be logged in to access this page.');
+        window.location.href = './login.html';
+    }
+}
+
 // Call the function when the page loads
-document.addEventListener('DOMContentLoaded', updateNavLinks);
+document.addEventListener('DOMContentLoaded', function() {
+    checkLogin();
+    updateNavLinks();
+});
 
 document.getElementById('logout-link').addEventListener('click', function() {
     localStorage.removeItem('username');

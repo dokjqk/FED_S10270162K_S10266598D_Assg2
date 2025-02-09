@@ -16,7 +16,7 @@ color: black;
 header, li, a, button{
 cursor: pointer;
 font-weight: 700;
-font-size: 1vw; /* Updated font-size to use vw */
+font-size: 1vw; 
 text-decoration: none;
 }
 
@@ -27,13 +27,13 @@ a {
 
 header{
 position: sticky;
-top: 0; /* Ensure the header sticks to the top */
+top: 0; 
 background-color: #21212e;
 overflow: hidden;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0 5vw; /* Updated padding to use vw */
+padding: 0 5vw; 
 }
 .nav-links {
 list-style: none;
@@ -54,7 +54,7 @@ text-decoration: none;
 color: #007bff;
 }
 button {
-  padding: 0.5vw 1.5vw; /* Updated padding to use vw */
+  padding: 0.5vw 1.5vw; 
   background-color: #8482A7;
   color: #F5F2FF;
   border: none;
@@ -70,50 +70,50 @@ background-color: rgba(82, 102, 126, 0.8);
 width: max-content;
 display: flex;
 align-items: center;
-padding: 0.5vw 1vw; /* Updated padding to use vw */
+padding: 0.5vw 1vw; 
 border-radius: 28px;
 background: #383843;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added drop shadow */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 transition: background-color 0.3s ease;
 }
 .search:hover {
-  background: #F5F2FF; /* Change background color on hover */
+  background: #F5F2FF; 
 }
 
 .search:hover .search-icon {
-  color: #383843; /* Change icon color on hover */
+  color: #383843; 
 }
 
 .search:hover ::placeholder {
-  color: #383843; /* Change placeholder color on hover */
+  color: #383843; 
 }
 .search-input{
-font-size: 1vw; /* Updated font-size to use vw */
+font-size: 1vw; 
 color: #333333;
-margin-left: 1vw; /* Updated margin to use vw */
+margin-left: 1vw; 
 outline: none;
 border: none;
 background: transparent;
-width: 40vw; /* Updated width to use vw */
+width: 40vw; 
 }
 
 
 .search-input::placeholder {
-  color: #F5F2FF; /* Updated placeholder color */
+  color: #F5F2FF; 
 }
 
 /* Navigation CSS - end - */
 
 /* Index page */
 .banner {
-  margin: 1vw auto; /* Updated margin to use vw */
+  margin: 1vw auto; 
   width: 90%;
-  height: 15vw; /* Updated height to use vw */
+  height: 15vw; 
   background-color: #E6E8E6;
-  border-radius: 0.5vw; /* Updated border-radius to use vw */
+  border-radius: 0.5vw; 
 }
 .banner img {
-  height: 15vw; /* Updated height to use vw */
+  height: 15vw; 
   width: 100%;
   object-fit: cover;
   max-height: 300px;
@@ -122,7 +122,7 @@ width: 40vw; /* Updated width to use vw */
 .categories {
   display: flex;
   flex-direction: column;
-  font-size: 1vw; /* Updated font-size to use vw */
+  font-size: 1vw; 
 }
 
 .cat-header h2{
@@ -135,58 +135,58 @@ width: 40vw; /* Updated width to use vw */
 }
 
 .category {
-  height: 15vw; /* Updated height to use vw */
+  height: 15vw; 
   min-width: 15vw;
   background-color: #383843;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 1vw; /* Updated border-radius to use vw */
+  border-radius: 1vw; 
   color: #f8f8f8;
-  box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.2); /* Updated box-shadow to use vw */
-  gap: 0.5vw; /* Updated gap to use vw */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth hover effect */
+  box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.2); 
+  gap: 0.5vw; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .category:hover {
-  transform: scale(1.05); /* Make the category bigger on hover */
-  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.3); 
 }
 
 .category img {
-  height: 10vw; /* Updated height to use vw */
+  height: 10vw; 
   align-content: center;
-  border-radius: 0.5vw; /* Added border-radius to images */
+  border-radius: 0.5vw; 
 }
-/* ...existing code... */
+
 
 .listings h2{
-  font-size: 1.3vw; /* Updated font-size to use vw */
+  font-size: 1.3vw; 
   margin: 0
 }
 
 .listings {
   display: flex;
-  gap: 1vw; /* Updated gap to use vw */
+  gap: 1vw; 
   justify-content: center;
-  padding: 1vw; /* Updated padding to use vw */
+  padding: 1vw; 
   flex-direction: column;
 }
 .grid{
 display: flex;
-gap: 2.5vw; /* Updated gap to use vw */
+gap: 2.5vw; 
 justify-content: center;
 }
 .cat-grid {
   display: flex;
-  gap: 2.5vw; /* Updated gap to use vw */
+  gap: 2.5vw; 
   justify-content: left;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding-top: 0.25vw; /* Updated padding to use vw */
-  padding-bottom: 0.25vw; /* Updated padding to use vw */
+  padding-top: 0.25vw; 
+  padding-bottom: 0.25vw; 
 }
 .cat-grid::-webkit-scrollbar {
 display: none;
@@ -200,38 +200,38 @@ padding-right: 5%;
 background-color: #383843;
 color: white;
 border: none;
-border-radius: 1.25vw; /* Updated border-radius to use vw */
-padding: 0.5vw 1vw; /* Updated padding to use vw */
-margin: 0.5vw; /* Updated margin to use vw */
+border-radius: 1.25vw; 
+padding: 0.5vw 1vw; 
+margin: 0.5vw; 
 }
 
-/* ...existing code... */
+
 .listing {
-  height: 24vw; /* Updated height to use vw */
+  height: 24vw; 
   width: 15vw;
   background-color: #47465a;
   display: flex;
   flex-direction: column;
-  gap: 0.25vw; /* Updated gap to use vw */
-  border-radius: 0.5vw; /* Updated border-radius to use vw */
-  box-shadow: 0 4px 8px rgba(153, 151, 151, 0.1); /* Added drop shadow */
+  gap: 0.25vw; 
+  border-radius: 0.5vw; 
+  box-shadow: 0 4px 8px rgba(153, 151, 151, 0.1); 
 }
-/* ...existing code... */
+
   
 .listing img {
-  height: 15vw; /* Updated height to use vw */
-  border-radius: 0 0.5vw 0.5vw 0; /* Updated border-radius to apply only on the right side */
+  height: 15vw; 
+  border-radius: 0 0.5vw 0.5vw 0; 
   align-self: center;
 }
 
-/* ...existing code... */
+
 .listing-icon {
-  padding-top: 0.5vw; /* Updated padding-top to use vw */
+  padding-top: 0.5vw; 
   display: flex;
-  gap: 1vw; /* Updated gap to use vw */
+  gap: 1vw; 
   align-items: center;
 }
-/* ...existing code... */
+
 
 .listing h5{
 font-size: 0.8vw;
@@ -241,35 +241,37 @@ margin: 0;
 
 
 
-/* ...existing code... */
+
 .listing-icon img {
-  height: 3.5vw; /* Updated height to use vw */
-  width: 3.5vw; /* Updated width to use vw */
-  border-radius: 1.75vw; /* Updated border-radius to use vw */
-  padding-left: 0.5vw; /* Updated padding-left to use vw */
+  height: 3.5vw; 
+  width: 3.5vw; 
+  border-radius: 1.75vw; 
+  padding-left: 0.5vw; 
 }
 
 
 .listing-image {
   display: flex;
-  height: 16vw; /* Updated height to use vw */
-  width: 36vw; /* Updated width to use vw */
+  height: 16vw; 
+  width: 36vw; 
   background-color: #47465a;
   justify-content: center;
 }
 
+/* Listing page */
+
 .listing-image-small{
 cursor: pointer;
-height: 10vw; /* Updated height to use vw */
-width: 10vw; /* Updated width to use vw */
+height: 10vw; 
+width: 10vw; 
 background-color: #21212e;
 display: flex;
 justify-content: center;
 padding: 0.5vw;
 }
 .listing-image-small img{
-height: 10vw; /* Updated height to use vw */
-border-radius: 0.5vw; /* Updated border-radius to use vw */
+height: 10vw; 
+border-radius: 0.5vw; 
 }
 
 .small-listing-image{
@@ -282,10 +284,10 @@ align-items: center;
 gap: 20px;
 }
 .profile img {
-  height: 2.5vw; /* Updated height to use vw */
-  width: 2.5vw; /* Updated width to use vw */
-  border-radius: 1.25vw; /* Updated border-radius to use vw */
-  padding-left: 0.5vw; /* Updated padding-left to use vw */
+  height: 2.5vw; 
+  width: 2.5vw; 
+  border-radius: 1.25vw; 
+  padding-left: 0.5vw; 
 }
 .listing-page{
 display: flex;
@@ -303,16 +305,16 @@ width: 90%;
 .listing-page-left{
   display: flex;
   flex-direction: column;
-  gap: 0.5vw; /* Updated gap to use vw */
+  gap: 0.5vw; 
 }
 
-/* ...existing code... */
+
 .listing-page-right {
   display: flex;
   flex-direction: column;
-  gap: 0.5vw; /* Updated gap to use vw */
+  gap: 0.5vw; 
 }
-/* ...existing code... */
+
 
 .listing-page-right h4,
 .listing-page-right h2,
@@ -321,44 +323,43 @@ margin: 0;
 }
 
 .listing-page-right h2 {
-  font-size: 2vw; /* Updated font-size to use vw */
+  font-size: 2vw; 
   color: #F5F2FF;
 }
 
 .listing-page-right h3 {
-  font-size: 1.5vw; /* Updated font-size to use vw */
+  font-size: 1.5vw; 
   color: #F5F2FF;
 }
 
 .listing-page-right h4 {
-  font-size: 1.25vw; /* Updated font-size to use vw */
+  font-size: 1.25vw; 
   color: #F5F2FF;
 }
 
-/* ...existing code... */
+
 .details {
-  height: 7.5vw; /* Updated height to use vw */
-  width: 20vw; /* Updated width to use vw */
+  height: 7.5vw; 
+  width: 20vw; 
   background-color: #e9e9e9;
   display: flex;
   flex-direction: column;
-  padding: 0.5vw; /* Updated padding to use vw */
+  padding: 0.5vw; 
   margin: 0;
   border: 0;
-  border-radius: 0.5vw; /* Updated border-radius to use vw */
+  border-radius: 0.5vw; 
   background-color: #21212e;
-  box-shadow: 0 0.1vw 0.2vw rgba(0, 0, 0, 0.1); /* Updated box-shadow to use vw */
+  box-shadow: 0 0.1vw 0.2vw rgba(0, 0, 0, 0.1); 
 }
 
 .details h4,
 .details p {
-  margin: 0.25vw 0; /* Updated margin to use vw */
+  margin: 0.25vw 0; 
   font-size: .9vw;
 }
 
 
 
-/* ...existing code... */
 
 .details button {
   margin-top: 10px;
@@ -375,9 +376,10 @@ margin: 0;
 background-color: #1c3052;
 }
 .listing-image img{
-  height: 15vw; /* Updated height to use vw */
-  border-radius: 0.5vw; /* Updated border-radius to use vw */
+  height: 15vw; 
+  border-radius: 0.5vw; 
 }
+
 /* Chatbox */
 .chatbox-container {
     position: relative;
@@ -387,25 +389,25 @@ background-color: #1c3052;
 .chatbox {
 margin: 0;
 padding: 0;
-padding-right: 1vw; /* Updated padding to use vw */
+padding-right: 1vw; 
 box-sizing: border-box;
 font-family: "Inter", sans-serif;
-max-height: 40vw; /* Updated max-height to use vw */
+max-height: 40vw; 
 }
 #chatbox-toggler {
 position: fixed;
-bottom: 1.5vw; /* Updated bottom to use vw */
-right: 4vw; /* Updated right to use vw */
+bottom: 1.5vw; 
+right: 4vw; 
 border: none;
-height: 2.5vw; /* Updated height to use vw */
-width: 2.5vw; /* Updated width to use vw */
+height: 2.5vw; 
+width: 2.5vw; 
 display: flex;
 align-items: center;
 justify-content: center;
 cursor: pointer;
 transition: all 0.3s ease;
 color: #d2cfca;
-overflow: hidden; /* Prevent overflow */
+overflow: hidden; 
 }
 #chatbox-toggler span {
 color: #d2cfca;
@@ -432,7 +434,7 @@ opacity: 1;
 
 .chatbot-popup {
 position: fixed;
-right: 50px; /* Move slightly to the left */
+right: 50px; 
 bottom: 90px;
 width: 420px;
 background: #d2cfca;
@@ -441,15 +443,14 @@ border-radius: 15px;
 opacity: 0;
 transform-origin: bottom right;
 pointer-events: none;
-box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1)
-0 32px 64px -48px rgba(0, 0, 0, 0.5);
+box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1);
 transition: all 0.3s ease;
 }
 
 body.show-chatbot .chatbot-popup {
 opacity: 1;
 pointer-events: auto;
-transform: scale(1); /* Ensure the chatbox is fully visible */
+transform: scale(1); 
 }
 
 .chat-header {
@@ -458,8 +459,8 @@ align-items: center;
 background: #0f1a2c;
 padding: 15px 22px;
 justify-content: space-between;
-box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
-z-index: 2; /* Ensure the header is above other elements */
+box-sizing: border-box; 
+z-index: 2; 
 }
 
 .chat-header .header-info {
@@ -490,14 +491,14 @@ height: 40px;
 width: 40px;
 font-size: 1.9rem;
 margin-right: -10px;
-padding: 0; /* Remove padding */
+padding: 0; 
 cursor: pointer;
 border-radius: 50%;
 background: none;
 transition: 0.2s ease;
 display: flex;
 align-items: center;
-justify-content: center; /* Center the icon */
+justify-content: center; 
 }
 .chat-header #close-chatbot:hover{
 transition: 0.2 ease;
@@ -515,9 +516,9 @@ overflow-y: auto;
 flex-direction: column;
 scrollbar-width: thin;
 scrollbar-color: #294678 #d2cfca;
-max-height: calc(80vh - 200px); /* Adjust the height to prevent overflow */
-overflow-x: hidden; /* Prevent horizontal overflow */
-padding-bottom: 100px; /* Add padding to avoid content being blocked by the footer */
+max-height: calc(80vh - 200px); 
+overflow-x: hidden; 
+padding-bottom: 100px; 
 }
 
 .chat-body .message{
@@ -567,10 +568,10 @@ width: 100%;
 bottom: 0;
 background: #d2cfca;
 padding: 15px 22px 20px;
-box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
-max-height: 20vh; /* Ensure the chat footer does not exceed the viewport height */
-overflow: hidden; /* Prevent overflow */
-z-index: 1; /* Ensure the footer is above the chat content */
+box-sizing: border-box; 
+max-height: 20vh; 
+overflow: hidden; 
+z-index: 1; 
 }
 
 .chat-footer .chat-form {
@@ -600,7 +601,7 @@ padding: 14px 0  13px 18px;
 border-radius: inherit;
 scrollbar-width: thin;
 scrollbar-color: #d2cfca transparent;
-color: #21212E; /* Updated text color */
+color: #21212E; 
 }
 
 .chat-form .message-input:hover {
@@ -616,10 +617,10 @@ gap: 3px;
 align-items: center;
 align-self: center;
 padding-right: 6px;
-justify-content: center; /* Center the icon */
-position: absolute; /* Add absolute positioning */
-bottom: 2vw; /* Align it to the bottom */
-right: 1vw; /* Align it to the right */
+justify-content: center; 
+position: absolute; 
+bottom: 2vw; 
+right: 1vw; 
 }
 
 .chat-form .chat-controls button {
@@ -634,8 +635,8 @@ border-radius: 50%;
 transition: 0.2s ease;
 display: flex;
 align-items: center;
-justify-content: center; /* Center the icon */
-padding: 0; /* Remove any padding */
+justify-content: center; 
+padding: 0; 
 }
 
 .chat-form .chat-controls #send-message {
@@ -659,6 +660,8 @@ color: #fffbf4;
 }
 
 
+/* List item */
+
 .list-items {
 padding-top: 10px;
 background-color: #383843;
@@ -669,7 +672,7 @@ border-radius: 10px;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added drop shadow */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 
 }
 
@@ -682,86 +685,88 @@ align-items: center;
 .list-right-side {
 display: flex;
 flex-direction: column;
-background-color: #3c3c54; /* Updated background color */
-padding: 1vw; /* Updated padding to use vw */
-border-radius: 0.5vw; /* Updated border-radius to use vw */
-gap: 0.5vw; /* Updated gap to use vw */
+background-color: #3c3c54; 
+padding: 1vw; 
+border-radius: 0.5vw; 
+gap: 0.5vw; 
 width: 30vw;
-height: 20vw; /* Updated height to use vw */
+height: 20vw; 
 font-size: 1vw;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better visual separation */
-transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth hover effect */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .list-right-side:hover {
-  background-color: #47465a; /* Change background color on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  background-color: #47465a; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
-/* ...existing code... */
+
 .form-items-left {
-    height: 2.5vw; /* Updated height to use vw */
-    width: 30vw; /* Updated width to use vw */
+    height: 2.5vw; 
+    width: 30vw; 
     background-color: #47465a;
     display: flex;
-    gap: 0.5vw; /* Updated gap to use vw */
+    gap: 0.5vw; 
     align-items: center;
     justify-content: center;
-    border-radius: 0.5vw; /* Updated border-radius to use vw */
+    border-radius: 0.5vw; 
 }
-/* ...existing code... */
+
 
 .create-list-image {
-  height: 10vw; /* Updated height to use vw */
-  width: 10vw; /* Updated width to use vw */
+  height: 10vw; 
+  width: 10vw; 
   background-color: #47465a;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 0.5vw; /* Updated border-radius to use vw */
+  border-radius: 0.5vw; 
 }
 
-/* ...existing code... */
+
 .create-list-image-big {
-  height: 20vw; /* Updated height to use vw */
-  width: 20vw; /* Updated width to use vw */
+  height: 20vw; 
+  width: 20vw; 
   background-color: #47465a;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 0.5vw; /* Updated border-radius to use vw */
+  border-radius: 0.5vw; 
 }
-/* ...existing code... */
 
-/* ...existing code... */
+
+
 .create-list-images {
   display: flex;
-  gap: 1vw; /* Updated gap to use vw */
+  gap: 1vw; 
 }
-/* ...existing code... */
+
 
 .create-list-image img {
-  max-height: 10vw; /* Updated max-height to use vw */
-  border-radius: 0.5vw; /* Updated border-radius to use vw */
-  width: auto; /* Ensure the image maintains its aspect ratio */
+  max-height: 10vw; 
+  border-radius: 0.5vw; 
+  width: auto; 
 }
-/* ...existing code... */
+
 
 .list-right-side input,
 .list-right-side select,
 .list-right-side textarea {
     width: 100%;
-    padding: 0.5vw; /* Updated padding to use vw */
-    border: 0.05vw solid #ccc; /* Updated border to use vw */
-    border-radius: 0.25vw; /* Updated border-radius to use vw */
+    padding: 0.5vw; 
+    border: 0.05vw solid #ccc; 
+    border-radius: 0.25vw; 
     box-sizing: border-box;
 }
 
+/* Profile */
+
 .profile-image img {
-  height: 5vw; /* Updated height to use vw */
-  border-radius: 2.5vw; /* Updated border-radius to use vw */
+  height: 5vw; 
+  border-radius: 2.5vw; 
 }
 
 .profile-header {
@@ -770,10 +775,13 @@ background-color: #3c3c54;
 max-width: 30vw;
 align-items: center;
 justify-content: center;
-gap: 2vw; /* Updated gap to use vw */
+gap: 2vw; 
 margin-left: 4.2vw;
-border-radius: 1vw; /* Updated border-radius to use vw */
+border-radius: 1vw; 
 font-size: 1vw;
+}
+.list-right-side textarea {
+  font-size: .9vw;
 }
 
 .profile-rating h2, h3{
@@ -786,11 +794,11 @@ font-size: 1vw;
 .listing-review {
 display: flex;
 margin-left: 4.2vw;
-font-size: 0.8vw; /* Make the text smaller */
+font-size: 0.8vw; 
 }
 
 .listing-review a {
-  font-size: 0.8vw; /* Ensure the <a> tags also have smaller text */
+  font-size: 0.8vw; 
 }
 
 .profile-listing {
@@ -809,29 +817,29 @@ font-size: 0.8vw; /* Make the text smaller */
 .profile-listings {
   display: flex;
   flex-wrap: wrap;
-  gap: 1vw; /* Updated gap to use vw */
+  gap: 1vw; 
   margin-left: 5vw;
   background-color: #3c3c54;
-  max-width: 70vw; /* Adjusted width */
-  padding: 1vw; /* Updated padding to use vw */
-  border-radius: 0.5vw; /* Updated border-radius to use vw */
+  max-width: 70vw; 
+  padding: 1vw; 
+  border-radius: 0.5vw; 
   font-size: 1vw;
 }
 
 .profile-review-tab {
   margin-left: 4.2vw;
   background-color: #383843;
-  max-width: 75vw; /* Adjusted width */
-  padding: 1vw; /* Updated padding to use vw */
-  border-radius: 0.5vw; /* Updated border-radius to use vw */
+  max-width: 75vw; 
+  padding: 1vw; 
+  border-radius: 0.5vw; 
 }
 
 .profile-listing-qty {
-  width: calc(20% - 2vw); /* Updated width to use vw */
+  width: calc(20% - 2vw); 
   text-align: left;
   background-color: #383843;
-  padding: 0.5vw; /* Updated padding to use vw */
-  border-radius: 0.5vw; /* Updated border-radius to use vw */
+  padding: 0.5vw; 
+  border-radius: 0.5vw; 
 
 }
 
@@ -841,33 +849,33 @@ font-size: 0.8vw; /* Make the text smaller */
 
 
 .profile-listing-qty img {
-    height: 16vw; /* Updated height to use vw */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
-    border-radius: 0.3vw; /* Updated border-radius to use vw */
+    height: 16vw; 
+    object-fit: cover; 
+    border-radius: 0.3vw; 
 }
 
 .profile-review-tab{
   display: flex;
   flex-direction: column;
-  gap: 1vw; /* Updated gap to use vw */
+  gap: 1vw; 
 }
 .reviewer {
   display: flex;
-  gap: 1vw; /* Updated gap to use vw */
-  margin-bottom: 1vw; /* Updated margin-bottom to use vw */
+  gap: 1vw; 
+  margin-bottom: 1vw; 
   align-items: center;
 }
 .reviewer img {
-  width: 3vw; /* Updated width to use vw */
-  height: 3vw; /* Updated height to use vw */
-  border-radius: 1.5vw; /* Updated border-radius to use vw */
+  width: 3vw; 
+  height: 3vw; 
+  border-radius: 1.5vw; 
 }
 
 .footer-images{
   display: flex;
-  gap: 1vw; /* Updated gap to use vw */
+  gap: 1vw; 
   justify-content: space-around;
-  padding: 1vw; /* Updated padding to use vw */
+  padding: 1vw; 
 }
 
 footer h2{
@@ -878,17 +886,17 @@ footer h2{
 .f-images {
   display: flex;
   flex-direction: column;
-  gap: 1vw; /* Updated gap to use vw */
+  gap: 1vw; 
   align-items: center;
 }
 
-
+/* User chat */
 
 .messages-both {
   display: flex;
   gap: 20px;
   padding: 20px;
-  background-color: #383843; /* Change background color to match the rest of the page */
+  background-color: #383843; 
 }
 
 .messages-left {
@@ -900,11 +908,11 @@ footer h2{
   background-color: #21212e;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  height:70vh; /* Change to take the whole length of the page */
+  height: 70vh; 
 }
 
 .messages-right {
-  flex: 1; /* Ensure it takes the full available width */
+  flex: 1; 
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -912,7 +920,7 @@ footer h2{
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative; /* Add relative positioning */
+  position: relative; 
 }
 
 .image-user-chat h4{
@@ -983,7 +991,6 @@ footer h2{
   gap: 2vw;
 }
 
-/* ...existing code... */
 
 .text-messages {
   display: flex;
@@ -1006,7 +1013,7 @@ footer h2{
 
 .user-message {
   justify-content: flex-end;
-  align-self: flex-end; /* Align messages to the right side */
+  align-self: flex-end; 
 }
 
 .bot-message {
@@ -1028,22 +1035,22 @@ footer h2{
   background-color: #f8d7da;
 }
 
-/* ...existing code... */
+
 
 .text-chat-footer {
   display: flex;
   gap: 10px;
   padding: 10px;
-  background-color: #21212e; /* Updated background color */
+  background-color: #21212e; 
   border-top: 1px solid #ccc;
   border-radius: 0 0 10px 10px;
-  align-items: center; /* Ensure items are centered vertically */
-  justify-content: space-between; /* Distribute space evenly */
-  color: #F5F2FF; /* Updated text color */
-  position: absolute; /* Position it absolutely */
-  bottom: 0; /* Align it to the bottom */
-  width: calc(100% - 40px); /* Adjust width to fit within padding */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for better visual separation */
+  align-items: center; 
+  justify-content: space-between; 
+  color: #F5F2FF; 
+  position: absolute; 
+  bottom: 0; 
+  width: calc(100% - 40px); 
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .message-input {
@@ -1052,8 +1059,8 @@ footer h2{
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
-  background-color: #21212e; /* Updated background color */
-  color: #F5F2FF; /* Updated text color */
+  background-color: #21212e; 
+  color: #F5F2FF; 
 }
 
 .send-message {
@@ -1088,7 +1095,7 @@ footer{
   }
 }
 
-/* ...existing code... */
+
 
 .review-container {
   display: flex;
@@ -1109,7 +1116,7 @@ footer{
     margin: 0;
 }
 
-/* ...existing code... */
+
 
 .review-details {
     display: flex;
@@ -1120,7 +1127,7 @@ footer{
     justify-content: center;
 }
 
-/* ...existing code... */
+
 
 .profile-info {
     display: flex;
@@ -1299,22 +1306,22 @@ a h3{
 }
 
 .rating > label {
-  color: #21212e;
+  color: #47465a; /* Default color */
   float: right;
   cursor: pointer;
 }
 
-.rating >input:checked ~ label,
+.rating > input:checked ~ label,
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label{
-  color: #21212e;
+  color: #21212e; /* Highlight color */
 }
 
 .rating >input:checked + label:hover,
 .rating >input:checked ~ label:hover,
 .rating >label:hover ~ input:checked ~ label,
 .rating >input:checked ~ label:hover ~ label{
-  color: #f5f2ff;
+  color: #21212e; /* Highlight color on hover */
 }
 
 button.pressed {
