@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5593393212.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
         </form>
         <nav>
             <ul class="nav-links">
-                <li><a href="#">Listings</a></li>
+                <li><a href="../fiction.html">Listings</a></li>
                 <li id="login-link" style="display: none;"><a href="./login.html">Login</a></li>
                 <li id="register-link" style="display: none;"><a href="./register.html">Register</a></li>
                 <li id="profile-link" style="display: none;"><a href="./profile.html">Profile</a></li>
@@ -47,7 +48,16 @@
         </div>
         <form id="review-form">
             <textarea placeholder="Write your review here..."></textarea>
-            <button type="submit">Submit Review</button>
+            <div class="container">
+                <fieldset class="rating">
+                    <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full"></label>
+                    <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
+                    <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
+                    <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
+                    <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
+                </fieldset>
+                <button type="submit">Submit Review</button>
+            </div>
         </form>
     </div>
     <script>
@@ -63,7 +73,6 @@
 
             document.getElementById('review-form').addEventListener('submit', function(event) {
                 event.preventDefault();
-                // Handle form submission logic here
                 window.location.href = '../index.html'; // Redirect to index.html
             });
         });

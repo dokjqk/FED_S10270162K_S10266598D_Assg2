@@ -20,7 +20,7 @@
         </form>
         <nav>
             <ul class="nav-links">
-                <li><a href="#">Listings</a></li>
+                <li><a href="../fiction.html">Listings</a></li>
                 <li id="login-link" style="display: none;"><a href="./login.html">Login</a></li>
                 <li id="register-link" style="display: none;"><a href="./register.html">Register</a></li>
                 <li id="profile-link" style="display: none;"><a href="./profile.html">Profile</a></li>
@@ -49,15 +49,15 @@
         <div class="listing-page-right">
             <h4>Fiction</h4>
             <h2>Fourth Wing</h2>
-            <h3>SGD 10</h3>
+            <h3>SGD 8</h3>
             <div class="profile">
                 <img src="../images/iu-icon.jpg" alt="Icon">
                 <h4>iu.uaena</h4>
             </div>
             <div class="details">
-                <h4>Condition: New</h4>
+                <h4>Condition: Used</h4>
                 <p>Meetup: Yew Tee MRT. In wonderful condition. Read it a few times.</p>
-                <button><a href="./messaging.html">Message</a></button>
+                <button id="message-button">Message</button>
             </div>
         </div>
     </div>
@@ -126,6 +126,19 @@
             </a>
         </div>   
     </section>
+    <script>
+        document.getElementById('message-button').addEventListener('click', function() {
+            const chatData = {
+                profileImage: '../images/iu-icon.jpg',
+                username: '@iu.uaena',
+                listingTitle: 'Fourth Wing',
+                listingPrice: 'SGD 8',
+                listingImage: '../images/fourthwing.jpg'
+            };
+            localStorage.setItem('newChat', JSON.stringify(chatData));
+            window.location.href = './messaging.html';
+        });
+    </script>
     <script src="./listing-page-script.js"></script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 function updateNavLinks() {
     const username = localStorage.getItem('username');
     const loginLink = document.getElementById('login-link');
@@ -20,6 +19,8 @@ function updateNavLinks() {
         logoutLink.style.display = 'none'; // Add this line
     }
 }
+
+
 
 // Call the function when the page loads
 document.addEventListener('DOMContentLoaded', updateNavLinks);
@@ -47,4 +48,37 @@ document.addEventListener('DOMContentLoaded', function() {
     
         localStorage.removeItem('reviewData');
     }
+
+    document.getElementById('review-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const username = document.getElementById('username-review').textContent;
+        const listingTitle = document.getElementById('listing-title-review').textContent;
+        const reviewText = document.querySelector('textarea').value;
+        const rating = document.querySelector('input[name="rating"]:checked').value;
+
+        const review = {
+            username: username,
+            listingTitle: listingTitle,
+            review: reviewText,
+            rating: rating
+        };
+
+        fetch('https://rating-a72f.restdb.io/rest/review', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'x-apikey': '67a80285600a700302de5be1'
+            },
+            body: JSON.stringify(review)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            alert('Review submitted successfully!');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    });
 });
